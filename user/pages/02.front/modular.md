@@ -1,6 +1,6 @@
 ---
 title: Tenori Taiga Photography
-menu: Front
+menu: Taiga
 body_classes: "taiga modular header-image fullwidth"
 
 content:
