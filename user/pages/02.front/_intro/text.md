@@ -1,5 +1,5 @@
 ---
-title: My New Page
+title: Intro
 ---
 # My New Page!
 

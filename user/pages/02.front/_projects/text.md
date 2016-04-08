@@ -1,5 +1,5 @@
 ---
-title: My New Page
+title: Projects overview
 ---
 # My New Page!
 

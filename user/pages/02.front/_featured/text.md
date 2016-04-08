@@ -1,5 +1,5 @@
 ---
-title: My New Page
+title: Featured project
 ---
 # My New Page!
 
