@@ -1,6 +1,6 @@
 ---
 title: Intro
 ---
-# My New Page!
+# Tenori Taiga Photography
 
-This is the body of **my new page** and I can easily use _Markdown_ syntax here.
+An experienced coser-turned-photographer that helps you capture the best characters through imagery with the most beautiful you.
