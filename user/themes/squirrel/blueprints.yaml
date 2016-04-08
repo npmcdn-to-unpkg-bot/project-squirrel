@@ -1,35 +1,13 @@
-name: Antimatter
-version: 1.8.0
-description: "Antimatter is the default theme included with **Grav**"
+name: Squirrel
+version: 0.0.1
+description: "Squirrel is a theme made for photography portfolios."
 icon: empire
 author:
-  name: Team Grav
-  email: devs@getgrav.org
-  url: http://getgrav.org
-homepage: https://github.com/getgrav/grav-theme-antimatter
-demo: http://demo.getgrav.org/blog-skeleton
-keywords: antimatter, theme, core, modern, fast, responsive, html5, css3
-bugs: https://github.com/getgrav/grav-theme-antimatter/issues
+  name: Vincent Zhang
+  email: vincentaths@gmail.com
+  url: http://freetocode.com
+homepage: http://localhost:8888
+demo: http://localhost:8888
+keywords: theme, core, modern, fast, responsive, html5, css3
+bugs: http://localhost:8888
 license: MIT
-
-form:
-  validation: loose
-  fields:
-    default_lang:
-      type: text
-      size: x-small
-      label: Default lang
-      default: 'en'
-      validate:
-        type: text
-
-    dropdown.enabled:
-        type: toggle
-        label: Dropdown in navbar
-        highlight: 1
-        default: 1
-        options:
-          1: Enabled
-          0: Disabled
-        validate:
-          type: bool
