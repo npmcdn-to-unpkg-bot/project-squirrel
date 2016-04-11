@@ -4,23 +4,15 @@ $rem-base: 16px;
 
 $spacing: 1rem;
 $spacing-xxsmall: ($spacing * 0.25);
-$spacing-small: ($spacing * 0.5);
-$spacing-smaller: ($spacing * 0.75);
+$spacing-xsmall: ($spacing * 0.5);
+$spacing-small: ($spacing * 0.75);
 $spacing-medium: ($spacing * 1.5);
 $spacing-large: ($spacing * 2);
-$spacing-xlarge: ($spacing * 2.20);
+$spacing-xlarge: ($spacing * 2.5);
 $spacing-xxlarge: ($spacing * 3);
 $spacing-xxxlarge: ($spacing * 4);
 
 $container-max-width: 60rem; /* 960px */
-
-@mixin body-font-family() {
-  $base-font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-  font-family: $base-font-family;
-  html:lang(ja) & {
-    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
-  }
-}
 
 
 
@@ -28,7 +20,7 @@ $container-max-width: 60rem; /* 960px */
 
 $base-font-size:   100%;
 $base-line-height: 150%;
-
+$base-font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-smoothing: antialiased;
 
 $font-weight-lighter: 200;

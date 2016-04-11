@@ -1,14 +1,12 @@
-<nav class="navbar navbar--default" role="navigation">
+<nav class="navbar sitenav sitenav--default" role="navigation">
   <div class="container">
-    <div class="navbar__header">
-      <a class="navbar__header__brand" href="#">Grav</a>
-    </div>
-    <div class="navbar__items">
-      <ul class="navbar__items__list">
+    <a class="sitenav__logo" href="#">Grav</a>
+    <div class="sitenav__list">
+      <ul>
         {% for page in pages.children %}
         {% if page.visible %}
         {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-        <li class="{{ current_page }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
+        <li class="sitenav__list__item {{ current_page }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
         {% endif %}
         {% endfor %}
       </ul>

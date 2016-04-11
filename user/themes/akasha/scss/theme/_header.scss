@@ -1,13 +1,21 @@
-.navbar {
-  &__header {
+.sitenav {
+  padding: $spacing-xxxlarge 0;
+  font-size: $font-size-small;
 
-    &__brand {
-
-    }
+  &__logo {
+    float: left;
   }
-  &__items {
-    &__list {
-      background: red;
+
+  &__list {
+    background: red;
+    float: right;
+
+    &__item {
+      display: inline-block;
+      &:not(:first-child) {
+        margin: 0 0 0 $spacing-small;
+      }
+
     }
   }
 
