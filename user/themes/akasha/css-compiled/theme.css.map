@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,IAAK;EACH,UAAU,EAAE,MAAM",
+"mappings": "AAAA,IAAK;EACH,UAAU,EAAE,IAAI",
 "sources": ["../scss/theme/_core.scss"],
 "names": [],
 "file": "theme.css"
