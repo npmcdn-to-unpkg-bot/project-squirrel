@@ -1,10 +1,10 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar--default" role="navigation">
   <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Grav</a>
+    <div class="navbar__header">
+      <a class="navbar__header__brand" href="#">Grav</a>
     </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
+    <div class="navbar__items">
+      <ul class="navbar__items__list">
         {% for page in pages.children %}
         {% if page.visible %}
         {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
