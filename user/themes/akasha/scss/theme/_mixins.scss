@@ -1,0 +1,16 @@
+@mixin link-hover-effect () {
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    height: 18px;
+    opacity: .1;
+    background: #555572;
+    display: block;
+    width: 100%;
+  }
+}
+@mixin transition-all () {
+  transition: all 0.3s ease-in-out;
+}

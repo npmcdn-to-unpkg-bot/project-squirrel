@@ -81,11 +81,21 @@ a {
   .sitenav__logo {
     float: left; }
   .sitenav__list {
-    background: red;
     float: right; }
     .sitenav__list__item {
-      display: inline-block; }
+      display: inline-block;
+      transition: all 0.3s ease-in-out; }
       .sitenav__list__item:not(:first-child) {
         margin: 0 0 0 0.75rem; }
+      .sitenav__list__item:hover:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 6px;
+        height: 18px;
+        opacity: .1;
+        background: #555572;
+        display: block;
+        width: 100%; }
 
 /*# sourceMappingURL=theme.css.map */
