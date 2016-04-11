@@ -1,6 +1,11 @@
 /* Spacing */
 /* 960px */
 /* Global typography vars */
+/* 10.8px */
+/* 12px */
+/* 14px */
+/* 16px */
+/* 19.2px */
 /* Global <body> vars */
 /* Header sitenav vars */
 /* Variables for h1, h2, h3, h4, h5, h6 */
@@ -69,8 +74,11 @@ body {
   position: relative;
   min-height: 100%; }
 
-a {
-  text-decoration: none; }
+a, a:visited {
+  text-decoration: none;
+  color: #999; }
+  a:hover, a:focus, a:active, a:visited:hover, a:visited:focus, a:visited:active {
+    color: #444; }
 
 .container {
   max-width: 60rem;
@@ -79,11 +87,15 @@ a {
   zoom: 1; }
 
 .sitenav {
+  max-width: 60rem;
+  margin: 0 auto;
+  position: relative;
   height: 48px;
   padding: 0;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  border-bottom: 1px solid rgba(49, 78, 95, 0.075); }
   .sitenav h1 {
-    width: 100px;
+    width: 70px;
     overflow: hidden;
     height: 27px;
     overflow: hidden;
@@ -105,7 +117,7 @@ a {
     height: auto;
     position: relative; }
   .sitenav__pages {
-    margin-left: 110px;
+    margin-left: 80px;
     padding: 16px 0 0; }
     .sitenav__pages__item {
       display: inline;
@@ -115,18 +127,6 @@ a {
       text-decoration: none;
       font-weight: 500;
       transition: all 0.3s ease-in-out; }
-      .sitenav__pages__item:not(:first-child) {
-        margin: 0 0 0 0.75rem; }
-      .sitenav__pages__item:hover:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 6px;
-        height: 18px;
-        opacity: .1;
-        background: #555572;
-        display: block;
-        width: 100%; }
   .sitenav__actions {
     position: absolute;
     right: 0;

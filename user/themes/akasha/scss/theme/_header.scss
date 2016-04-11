@@ -1,7 +1,11 @@
 .sitenav {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  position: relative;
   height: 48px;
   padding: 0;
   font-size: $font-size-small;
+  border-bottom: 1px solid $border-color-sitenav;
 
   h1 {
     width: $sitenav-logo-width;
@@ -37,12 +41,6 @@
     &__item {
       @include nav-link-style;
       @include transition-all;
-      &:not(:first-child) {
-        margin: 0 0 0 $spacing-small;
-      }
-      &:hover {
-        @include link-hover-effect;
-      }
     }
   }
 

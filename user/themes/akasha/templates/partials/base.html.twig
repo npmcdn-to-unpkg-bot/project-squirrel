@@ -39,13 +39,16 @@
   </head>
 
   <body>
-    {# include the header + navigation #}
-    {% include 'partials/header.html.twig' %}
+    <div id="main">
+      {# include the header + navigation #}
+      {% include 'partials/header.html.twig' %}
 
-    <div class="container container--global">
-      {% block content %}{% endblock %}
+      <div id="main-content" class="container">
+        {% block content %}{% endblock %}
+      </div>
+      {% block bottom %}{% endblock %}
     </div>
   </body>
 
-  {% block bottom %}{% endblock %}
+
 </html>
