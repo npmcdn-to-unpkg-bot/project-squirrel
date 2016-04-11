@@ -2,8 +2,11 @@
 /* 960px */
 /* Global typography vars */
 /* Global <body> vars */
+/* Header sitenav vars */
 /* Variables for h1, h2, h3, h4, h5, h6 */
 /* Colors */
+/* Global utilities */
+/* Header sitenav link styles */
 /* CSS Reset
   http://meyerweb.com/eric/tools/css/reset/ 
   v2.0 | 20110126
@@ -76,18 +79,45 @@ a {
   zoom: 1; }
 
 .sitenav {
-  padding: 4rem 0;
+  height: 48px;
+  padding: 0;
   font-size: 0.875rem; }
-  .sitenav__logo {
-    float: left; }
-  .sitenav__list {
-    float: right; }
-    .sitenav__list__item {
-      display: inline-block;
+  .sitenav h1 {
+    width: 100px;
+    overflow: hidden;
+    height: 27px;
+    overflow: hidden;
+    text-indent: 100%;
+    margin: 0 0 0 -1px;
+    position: absolute;
+    z-index: 10;
+    top: 10px; }
+    .sitenav h1 a {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-image: url(https://stripe.com/img/navigation/logo.png?2);
+      background-repeat: no-repeat; }
+  .sitenav__content {
+    left: auto;
+    width: auto;
+    height: auto;
+    position: relative; }
+  .sitenav__pages {
+    margin-left: 110px;
+    padding: 16px 0 0; }
+    .sitenav__pages__item {
+      display: inline;
+      list-style-type: none;
+      padding: 10px 8px;
+      color: #666;
+      text-decoration: none;
+      font-weight: 500;
       transition: all 0.3s ease-in-out; }
-      .sitenav__list__item:not(:first-child) {
+      .sitenav__pages__item:not(:first-child) {
         margin: 0 0 0 0.75rem; }
-      .sitenav__list__item:hover:before {
+      .sitenav__pages__item:hover:before {
         content: "";
         position: absolute;
         left: 0;
@@ -97,5 +127,24 @@ a {
         background: #555572;
         display: block;
         width: 100%; }
+  .sitenav__actions {
+    position: absolute;
+    right: 0;
+    padding: 16px 0 0;
+    top: 0; }
+    .sitenav__actions__item {
+      display: inline;
+      list-style-type: none;
+      padding: 10px 8px;
+      color: #666;
+      text-decoration: none;
+      font-weight: 500; }
+    .sitenav__actions__button {
+      display: inline;
+      list-style-type: none;
+      padding: 10px 8px;
+      color: #666;
+      text-decoration: none;
+      font-weight: 500; }
 
 /*# sourceMappingURL=theme.css.map */

@@ -1,3 +1,5 @@
+/* Global utilities */
+
 @mixin link-hover-effect () {
   &:before {
     content: "";
@@ -13,4 +15,22 @@
 }
 @mixin transition-all () {
   transition: all 0.3s ease-in-out;
+}
+
+/* Header sitenav link styles */
+@mixin nav-link-style () {
+  display: inline;
+  list-style-type: none;
+  padding: 10px 8px;
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+}
+@mixin nav-button-style () {
+  display: inline;
+  list-style-type: none;
+  padding: 10px 8px;
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
 }

@@ -1,15 +1,21 @@
-<nav class="navbar sitenav sitenav--default" role="navigation">
+<div id="sitenav--global" class="navbar sitenav sitenav--global" role="navigation">
   <div class="container">
-    <a class="sitenav__logo" href="#">Grav</a>
-    <div class="sitenav__list">
-      <ul>
+    <h1>
+      <a class="sitenav__logo" href="#">Grav</a>
+    </h1>
+    <nav class="sitenav__content">
+      <ul class="sitenav__pages">
         {% for page in pages.children %}
         {% if page.visible %}
         {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-        <li class="sitenav__list__item {{ current_page }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
+        <li class="sitenav__pages__item {{ current_page }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
         {% endif %}
         {% endfor %}
       </ul>
-    </div>
+      <ul class="sitenav__actions">
+        <li class="sitenav__actions__item"><a href="#">Docs</a></li>
+        <li class="sitenav__actions__button"><a href="#">Contact me</a></li>
+      </ul>
+    <nav>
   </div>
-</nav>
+</div>
