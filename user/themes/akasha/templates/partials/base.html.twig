@@ -38,20 +38,14 @@
     {% endblock head %}
   </head>
 
-    <body>
-
+  <body>
     {# include the header + navigation #}
     {% include 'partials/header.html.twig' %}
 
     <div class="container">
       {% block content %}{% endblock %}
     </div>
-
-    <div class="footer">
-      <div class="container">
-        <p class="text-muted">Mytheme Theme for <a href="http://getgrav.org">Grav</a></p>
-      </div>
-    </div>
   </body>
+
   {% block bottom %}{% endblock %}
 </html>
