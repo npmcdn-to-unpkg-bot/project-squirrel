@@ -1,5 +1,10 @@
 // TEMPLATE COMPONENTS
 
-// Core
+// Core, global
 @import "theme/variables";
 @import "theme/core";
+
+// Components, global
+@import "theme/header";
+
+// Page specific
