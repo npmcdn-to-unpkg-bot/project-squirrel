@@ -1,0 +1,113 @@
+/* Spacing */
+
+$rem-base: 16px;
+
+$spacing: 1rem;
+$spacing-xxsmall: ($spacing * 0.25);
+$spacing-small: ($spacing * 0.5);
+$spacing-smaller: ($spacing * 0.75);
+$spacing-medium: ($spacing * 1.5);
+$spacing-large: ($spacing * 2);
+$spacing-xlarge: ($spacing * 2.20);
+$spacing-xxlarge: ($spacing * 3);
+$spacing-xxxlarge: ($spacing * 4);
+
+$container-max-width: 60rem; /* 960px */
+
+@mixin body-font-family() {
+  $base-font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+  font-family: $base-font-family;
+  html:lang(ja) & {
+    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+  }
+}
+
+
+
+/* Global typography vars */
+
+$base-font-size:   100%;
+$base-line-height: 150%;
+
+$font-smoothing: antialiased;
+
+$font-weight-lighter: 200;
+$font-weight-light:   300;
+$font-weight-normal:  400;
+$font-weight-medium:  600;
+$font-weight-bold:    700;
+$font-weight-bolder:  900;
+
+$font-size-tiny:   0.675rem;
+$font-size-small:  0.875rem;
+$font-size-normal: 1rem;
+$font-size-medium: 1.075rem;
+$font-size-large:  1.2rem;
+$font-size-xlarge: 2rem;
+
+$font-line-height: 1.2rem;
+$font-line-height-large: 1.5rem;
+$font-line-height-xlarge: 2rem;
+
+
+
+/* Global <body> vars */
+
+$body-bg:          #F7F7F7;
+$body-font-style:  normal;
+$body-font-size:   $base-font-size;
+
+
+
+/* Variables for h1, h2, h3, h4, h5, h6 */
+
+$h1-font-size: 2.25rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.3rem;
+$h5-font-size: 1rem;
+$h6-font-size: 0.875rem;
+
+$h1-line-height: 1; // 36px
+$h2-line-height: 1; // 32px
+$h3-line-height: 1.165; // 28px
+$h4-line-height: 1.15; // 24px
+$h5-line-height: 1.3; // 21px
+$h6-line-height: 1.5; // 21px
+
+
+
+/* Colors */
+
+
+// Backgrounds
+
+// Opacity Colors
+
+$opacity-color: rgba(0,0,0,0.12);
+$opacity-color-light: rgba(0,0,0,0.06);
+$opacity-color-light-hex: #F0F0F0;
+$opacity-color-dark: rgba(0,0,0,0.2);
+$opacity-color-darker: rgba(0,0,0,0.5);
+$opacity-color-dark-hex: #CCC;
+$opacity-color-white: rgba(255,255,255,0.3);
+
+// Borders
+
+// Menu Box Shadow
+
+// Links css arrows to variables
+
+// Icons
+
+// Modal
+
+// Form
+
+// Checkbox
+
+// Z-indices
+
+// Advertisement sizes
+
+// Media Query Ranges

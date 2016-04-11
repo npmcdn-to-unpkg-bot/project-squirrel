@@ -1,3 +1,19 @@
+html {
+  font-size: $rem-base; /* Define base REM as 16px */
+}
+
 body {
-  background: #FFF;
+  background: $body-bg;
+  font-size: $body-font-size;
+  font-style: $body-font-style;
+  font-weight: $font-weight-normal;
+  position: relative;
+  min-height: 100%;
+}
+
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  position: relative;
+  zoom: 1;  
 }
