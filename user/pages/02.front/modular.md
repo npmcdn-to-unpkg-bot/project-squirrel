@@ -11,6 +11,4 @@ content:
         custom:
             - _intro
             - _projects
-            - _featured
-            - _highlights
 ---

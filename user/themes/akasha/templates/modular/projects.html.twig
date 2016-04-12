@@ -1,5 +1,12 @@
 <div class="home__projects">
   <section class="home__projects__content">
     {{ content }}
+    <ul class="gallery--home">
+    {% for image in page.media.images %}
+    <li class="gallery--home__item">
+        {{ image.cropResize(300,200).html }}
+    </li>
+    {% endfor %}
+    </ul>    
   </section>
 </div>
