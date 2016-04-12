@@ -1,5 +1,10 @@
 /* Global utilities */
-
+@mixin max-container ($marginValue...) {
+  margin: $marginValue;
+  max-width: $container-max-width;
+  position: relative;
+  zoom: 1;
+}
 @mixin link-hover-effect () {
   &:before {
     content: "";

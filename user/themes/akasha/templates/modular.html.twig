@@ -1,8 +1,10 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
+  <div class="main-content__modular home">
     {{ page.content }}
     {% for module in page.collection() %}
         {{ module.content }}
     {% endfor %}
+  </div>
 {% endblock %}

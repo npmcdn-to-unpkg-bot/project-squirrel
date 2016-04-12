@@ -81,10 +81,13 @@ a, a:visited {
     color: #444; }
 
 .container {
-  max-width: 60rem;
   margin: 0 auto;
+  max-width: 60rem;
   position: relative;
   zoom: 1; }
+
+#header {
+  padding: 2rem 0; }
 
 .sitenav {
   max-width: 60rem;
