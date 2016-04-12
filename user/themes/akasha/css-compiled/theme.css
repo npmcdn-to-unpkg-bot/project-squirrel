@@ -156,19 +156,35 @@ a, a:visited {
       font-weight: 500; }
 
 .home__intro__content {
-  margin: 2rem auto;
+  margin: 20vh auto;
   max-width: 60rem;
   position: relative;
   zoom: 1; }
   .home__intro__content h2 {
+    max-width: 50rem;
+    margin: 0 auto;
     font-size: 26px;
     font-weight: 400;
     line-height: 1.5;
     text-align: center; }
 .home__projects__content {
-  margin: 2rem auto;
+  margin: 30vh auto;
   max-width: 60rem;
   position: relative;
   zoom: 1; }
+.home .gallery--home {
+  max-width: 58rem;
+  margin: 0 0 0 1rem; }
+  .home .gallery--home__item {
+    display: inline-block; }
+  .home .gallery--home img {
+    max-width: 49%;
+    margin-bottom: 2px;
+    border-radius: 2px; }
+
+/* Masonry utilities */
+.gutter-sizer-responsive {
+  /* For masonry to set responsive horizontal gutter */
+  width: 0.5%; }
 
 /*# sourceMappingURL=theme.css.map */

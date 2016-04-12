@@ -1,9 +1,11 @@
 jQuery(document).ready(function($){
   console.log('jQuery version', jQuery.fn.jquery);
 
-  // Process masonry layout for homepage projects gallery
-  // $('.gallery--home').masonry({
-  //   columnWidth: 200,
-  //   itemSelector: '.gallery--home__item'
-  // });
+  var $galleryHome = $('.gallery--home').imagesLoaded(function() {
+    $galleryHome.masonry({
+      gutter: 2,
+      percentPosition: true,
+      itemSelector: '.gallery--home__img'
+    });
+  });
 });
