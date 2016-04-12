@@ -150,4 +150,12 @@ a, a:visited {
       text-decoration: none;
       font-weight: 500; }
 
+.home__intro__content {
+  margin: 0 auto;
+  max-width: 60rem;
+  position: relative;
+  zoom: 1; }
+  .home__intro__content h2 {
+    font-size: 24px; }
+
 /*# sourceMappingURL=theme.css.map */

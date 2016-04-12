@@ -1,8 +1,9 @@
 .home {
   &__intro {
     &__content {
+      @include max-container(0 auto);
       h2 {
-        
+        font-size: 24px;
       }
     }
   }
