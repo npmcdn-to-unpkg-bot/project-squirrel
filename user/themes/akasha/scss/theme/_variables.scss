@@ -13,7 +13,7 @@ $spacing-xxlarge: ($spacing * 3);
 $spacing-xxxlarge: ($spacing * 4);
 
 $container-max-width: 60rem; /* 960px */
-
+$collage-img-width: 80%;
 
 
 /* Global typography vars */
@@ -110,6 +110,9 @@ $opacity-color-white: rgba(255,255,255,0.3);
 // Checkbox
 
 // Z-indices
+$z-index-header: 900;
+$z-index-collage-content: 10;
+$z-index-collage-img: 9;
 
 // Advertisement sizes
 

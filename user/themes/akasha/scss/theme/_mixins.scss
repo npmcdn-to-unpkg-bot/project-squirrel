@@ -1,6 +1,6 @@
 /* Global utilities */
-@mixin max-container ($marginValue...) {
-  margin: $marginValue;
+@mixin max-container ($maxContainerMarginValue...) {
+  margin: $maxContainerMarginValue;
   max-width: $container-max-width;
   position: relative;
   zoom: 1;

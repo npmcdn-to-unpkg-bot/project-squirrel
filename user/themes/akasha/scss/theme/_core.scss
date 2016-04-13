@@ -73,3 +73,12 @@ a, a:visited {
 .container {
   @include max-container(0 auto);
 }
+.clearfix {
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

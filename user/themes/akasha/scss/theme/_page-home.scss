@@ -15,8 +15,8 @@
   }
 
   &__projects {
+    @include max-container(20vh auto);
     &__content {
-      @include max-container(30vh auto);
     }
   }
 
@@ -39,4 +39,44 @@
 .gutter-sizer-responsive {
   /* For masonry to set responsive horizontal gutter */
   width: 0.5%;
+}
+.collage {
+  display: flex;
+  &__img {
+    float: left;
+    display: inline-block;
+    width: $collage-img-width;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__content {
+    z-index: $z-index-collage-content;
+    align-self: center;
+    display: inline-block;
+    float: left;
+    max-width: 300px;
+    margin-left: -35px;
+    letter-spacing: 0.35px;
+    h2 {
+      font-size: 36px;
+      margin: 30px auto;
+      letter-spacing: 2px;
+    }
+    p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #888;
+    }
+  }
+}
+
+.header__border {
+  padding-bottom: 5px;
+  background-position: 0 85%;
+  background-size: 100% 15px;
+  background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient(#f9e1e7 0%, #f9e1e7 100%);
+  background-image: -o-linear-gradient(#f9e1e7 0%, #f9e1e7 100%);
+  background-image: linear-gradient(#f9e1e7 0%, #f9e1e7 100%);
 }

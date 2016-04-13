@@ -1,12 +1,9 @@
 #header {
-  padding: $spacing-large 0;
+  margin: $spacing-large 0;
 }
 .sitenav {
-  max-width: $container-max-width;
-  margin: 0 auto;
-  position: relative;
+  @include max-container(0 auto);
   height: 48px;
-  padding: 0;
   font-size: $font-size-small;
   border-bottom: 1px solid $border-color-sitenav;
 
