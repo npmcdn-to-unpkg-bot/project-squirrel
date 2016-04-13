@@ -11,7 +11,8 @@
 /* Variables for h1, h2, h3, h4, h5, h6 */
 /* Colors */
 /* Global utilities */
-/* Header sitenav link styles */
+/* Global sitenav link styles */
+/* Section header styles */
 /* CSS Reset
   http://meyerweb.com/eric/tools/css/reset/ 
   v2.0 | 20110126
@@ -221,7 +222,7 @@ a, a:visited {
 .header__border {
   padding-bottom: 5px;
   background-position: 0 85%;
-  background-size: 100% 15px;
+  background-size: 100% 1rem;
   background-repeat: repeat-x;
   background-image: -webkit-linear-gradient(#f9e1e7 0%, #f9e1e7 100%);
   background-image: -o-linear-gradient(#f9e1e7 0%, #f9e1e7 100%);

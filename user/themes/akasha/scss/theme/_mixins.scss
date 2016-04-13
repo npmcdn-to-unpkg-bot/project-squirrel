@@ -22,7 +22,9 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Header sitenav link styles */
+
+
+/* Global sitenav link styles */
 @mixin nav-link-style () {
   display: inline;
   list-style-type: none;
@@ -38,4 +40,17 @@
   color: #666;
   text-decoration: none;
   font-weight: 500;
+}
+
+
+
+/* Section header styles */
+@mixin header-border ($headerPaddingBottom, $headerBgPos, $headerBgColor...) {
+  padding-bottom: $headerPaddingBottom;
+  background-position: 0 $headerBgPos;
+  background-size: 100% 1rem;
+  background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient($headerBgColor);
+  background-image: -o-linear-gradient($headerBgColor);
+  background-image: linear-gradient($headerBgColor);
 }
