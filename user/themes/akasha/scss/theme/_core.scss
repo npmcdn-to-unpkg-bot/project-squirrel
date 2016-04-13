@@ -70,6 +70,8 @@ a, a:visited {
     color: $link-color-hover;
   }
 }
+.main-content {
+}
 .container {
   @include max-container(0 auto);
 }

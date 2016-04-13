@@ -1,6 +1,7 @@
 .home {
 
   &__intro {
+    @include responsive-margin-and-width();
     &__content {
       @include max-container(20vh auto);
       h2 {

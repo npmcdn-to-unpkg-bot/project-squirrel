@@ -21,7 +21,15 @@
 @mixin transition-all () {
   transition: all 0.3s ease-in-out;
 }
-
+@mixin responsive-margin-and-width ($marginParam: $spacing-large, $widthParam: 90%) {
+  /* Apply this at the parent div of .container */
+  margin: $marginParam auto;
+  @media (max-width: $container-max-width) {
+    & {
+      width: $widthParam;
+    }
+  }
+}
 
 
 /* Global sitenav link styles */

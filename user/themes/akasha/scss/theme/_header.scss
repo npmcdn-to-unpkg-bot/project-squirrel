@@ -1,5 +1,5 @@
 #header {
-  margin: $spacing-large 0;
+  @include responsive-margin-and-width($spacing-large);
 }
 .sitenav {
   @include max-container(0 auto);
