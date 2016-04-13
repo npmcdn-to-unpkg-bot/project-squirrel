@@ -1,3 +1,16 @@
+.page--home {
+  body {
+    /*background-image: -webkit-linear-gradient(287deg,#270530 10%,#196d82 36%,#fff 70%);*/
+    background-image: linear-gradient(163deg,#f9e1e7 10%,#FFF6F2 35%,#f7f7f7 70%);
+    background-size: 100% 1100px;
+    background-repeat: no-repeat;    
+    /*background: url(https://unsplash.it/1600/900?image=830) no-repeat;*/
+    /*overflow: hidden;*/
+    /*clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);*/
+    /*@include angle(after, false, 20deg);*/
+  }
+}
+
 .home {
 
   &__intro {
@@ -16,8 +29,8 @@
   }
 
   &__projects {
-    @include max-container(20vh auto);
     &__content {
+      @include max-container(20vh auto);
     }
   }
 

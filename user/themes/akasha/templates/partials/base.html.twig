@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="{{ page.header.page_classes }}">
   <head>
     {% block head %}
     <meta charset="utf-8">
@@ -27,7 +27,7 @@
       {% do assets.add('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', 200) %}
       {% do assets.add('https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js', 101) %}
       {% do assets.add('https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js', 101) %}
-      
+
       {% do assets.add('theme://js/theme.js', 100) %}
 
       {% if browser.getBrowser == 'msie' and browser.getVersion >= 8 and browser.getVersion <= 9 %}

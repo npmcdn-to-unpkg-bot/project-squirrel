@@ -13,6 +13,7 @@
 /* Global utilities */
 /* Global sitenav link styles */
 /* Section header styles */
+/* Angled edges background CSS, credit https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms */
 /* CSS Reset
   http://meyerweb.com/eric/tools/css/reset/ 
   v2.0 | 20110126
@@ -166,6 +167,16 @@ a, a:visited {
       text-decoration: none;
       font-weight: 500; }
 
+.page--home body {
+  /*background-image: -webkit-linear-gradient(287deg,#270530 10%,#196d82 36%,#fff 70%);*/
+  background-image: linear-gradient(163deg, #f9e1e7 10%, #FFF6F2 35%, #f7f7f7 70%);
+  background-size: 100% 1100px;
+  background-repeat: no-repeat;
+  /*background: url(https://unsplash.it/1600/900?image=830) no-repeat;*/
+  /*overflow: hidden;*/
+  /*clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);*/
+  /*@include angle(after, false, 20deg);*/ }
+
 .home__intro {
   /* Apply this at the parent div of .container */
   margin: 2rem auto; }
@@ -184,7 +195,7 @@ a, a:visited {
       font-weight: 400;
       line-height: 1.5;
       text-align: center; }
-.home__projects {
+.home__projects__content {
   margin: 20vh auto;
   max-width: 60rem;
   position: relative;

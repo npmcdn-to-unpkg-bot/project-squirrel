@@ -1,7 +1,9 @@
 ---
 title: Tenori Taiga Photography
+slug: taiga
 menu: Taiga
-body_classes: "taiga modular header-image fullwidth"
+page_classes: "page page--featured page--home"
+metadata:
 
 content:
     items: '@self.modular'
