@@ -31,6 +31,10 @@
   &__projects {
     &__content {
       @include max-container(20vh auto);
+      &__row {
+        display: flex;
+        width: 100%;
+      }
     }
   }
 
@@ -55,11 +59,21 @@
   width: 0.5%;
 }
 .collage {
-  display: flex;
   &__img {
-    float: left;
-    display: inline-block;
-    width: $collage-img-width;
+    &--hero {
+      float: left;
+      display: inline-block;
+      width: $collage-img-width;
+    }
+    &--horizontal {
+
+    }
+    &--vertical {
+
+    }
+    &--bottom {
+
+    }
     img {
       max-width: 100%;
     }

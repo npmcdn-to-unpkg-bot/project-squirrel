@@ -1,24 +1,25 @@
 <div class="home__projects">
   <section class="home__projects__content collage">
-    <figure class="collage__img">
-      <img src="https://images.unsplash.com/photo-1451906278231-17b8ff0a8880">
-    </figure>
-    <div class="collage__content">
-      <h2>
-        <span class="header__border">Cosplay Photography</span>
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris risus nisi, tempus vitae mauris eget, rhoncus vestibulum turpis. Quisque mollis condimentum ipsum, eu auctor ex.
-      </p>
+
+    <div class="home__projects__content__row clear">
+      <figure class="collage__img collage__img--hero">
+        <img src="{{ page.media['project-hero.jpg'].url }}">
+      </figure>
+
+      <div class="collage__content">
+        <h2>
+          <span class="header__border">{{ page.header.project_header }}</span>
+        </h2>
+        <p>{{ page.header.project_desc }}</p>
+      </div>
+      <div class="clearfix"></div>
     </div>
-    <div class="clearfix"></div>
-    {{ content }}
-<!--     <ul class="gallery--home">
-      {% for image in page.media.images %}
-        <li class="gallery--home__item">
-          {{ image.cropResize(800).html('','','gallery--home__img') }}
-        </li>
-      {% endfor %}
-      </ul> -->
+
+    <div class="home__projects__content__row">
+      <figure class="collage__img collage__img--horizontal">
+        <img src="{{ page.media['project-horizontal.jpg'].url }}">
+      </figure>
+    </div>
+
   </section>
 </div>

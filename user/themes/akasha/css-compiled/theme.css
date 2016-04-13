@@ -88,6 +88,11 @@ a, a:visited {
   position: relative;
   zoom: 1; }
 
+.clear:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
@@ -200,6 +205,9 @@ a, a:visited {
   max-width: 60rem;
   position: relative;
   zoom: 1; }
+  .home__projects__content__row {
+    display: flex;
+    width: 100%; }
 .home .gallery--home {
   max-width: 58rem;
   margin: 0 0 0 1rem; }
@@ -215,30 +223,28 @@ a, a:visited {
   /* For masonry to set responsive horizontal gutter */
   width: 0.5%; }
 
-.collage {
-  display: flex; }
-  .collage__img {
-    float: left;
-    display: inline-block;
-    width: 80%; }
-    .collage__img img {
-      max-width: 100%; }
-  .collage__content {
-    z-index: 10;
-    align-self: center;
-    display: inline-block;
-    float: left;
-    max-width: 300px;
-    margin-left: -35px;
-    letter-spacing: 0.35px; }
-    .collage__content h2 {
-      font-size: 36px;
-      margin: 30px auto;
-      letter-spacing: 2px; }
-    .collage__content p {
-      font-size: 13px;
-      line-height: 1.6;
-      color: #888; }
+.collage__img--hero {
+  float: left;
+  display: inline-block;
+  width: 80%; }
+.collage__img img {
+  max-width: 100%; }
+.collage__content {
+  z-index: 10;
+  align-self: center;
+  display: inline-block;
+  float: left;
+  max-width: 300px;
+  margin-left: -35px;
+  letter-spacing: 0.35px; }
+  .collage__content h2 {
+    font-size: 36px;
+    margin: 30px auto;
+    letter-spacing: 2px; }
+  .collage__content p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #888; }
 
 .header__border {
   padding-bottom: 5px;

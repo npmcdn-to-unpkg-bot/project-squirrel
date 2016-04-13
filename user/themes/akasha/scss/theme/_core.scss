@@ -75,6 +75,11 @@ a, a:visited {
 .container {
   @include max-container(0 auto);
 }
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .clearfix {
   &:before, &:after {
     content: " ";
