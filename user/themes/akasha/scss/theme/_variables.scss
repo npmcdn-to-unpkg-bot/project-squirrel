@@ -12,8 +12,11 @@ $spacing-xlarge: ($spacing * 2.5);
 $spacing-xxlarge: ($spacing * 3);
 $spacing-xxxlarge: ($spacing * 4);
 
-$container-max-width: 60rem; /* 960px */
+$container-max-width-rem: 60rem; /* 960px */
+$container-max-width: 960px; /* 960px */
+$content-row-margin-home: $spacing-large;
 $collage-img-width: 80%;
+$collage-img-height-normal: 300px;
 $collage-item-gutter: 2px; /* 2px */
 
 /* Global typography vars */

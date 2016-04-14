@@ -31,7 +31,7 @@
       &__row {
         display: flex;
         width: 100%;
-        margin: $spacing-large 0;
+        padding: 0 0 $collage-item-gutter * 2;
       }
     }
   }
@@ -39,6 +39,11 @@
   &__workflow {
     &__content {
       @include max-container(20vh auto);
+      &__row {
+        display: flex;
+        width: 100%;
+        margin: $content-row-margin-home 0;
+      }
       h2 {
         @include header-chapter-typography(large, center);
         max-width: 50rem;
@@ -50,11 +55,7 @@
 }
 
 
-/* Masonry utilities */
-.gutter-sizer-responsive {
-  /* For masonry to set responsive horizontal gutter */
-  width: 0.5%;
-}
+/* Homepage collage / gallery utilities */
 .collage {
 
   .flexgrid {
@@ -86,26 +87,39 @@
   }
 
   &__img {
+    background: darkgrey;
+    width: ($container-max-width - $collage-item-gutter * 4) / 2;
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
     &--hero {
       float: left;
       display: inline-block;
       width: $collage-img-width;
     }
     &--vertical {
+      height: $collage-img-height-normal * 2 + $collage-item-gutter * 2;
     }
     &--horizontal {
+      height: $collage-img-height-normal;
 /*      position: absolute;
       top: -50px;
       width: 120%;*/
     }
     &--bottom {
+      height: $collage-img-height-normal;
     }
     img {
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%;
       width: 100%;
+      border-radius: $collage-item-gutter;
     }
   }
 
-  &__content {
+  &__content { /* The textual literal content */
     z-index: $z-index-collage-content;
     align-self: center;
     display: inline-block;
