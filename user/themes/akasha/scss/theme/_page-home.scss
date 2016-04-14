@@ -34,6 +34,7 @@
       &__row {
         display: flex;
         width: 100%;
+        margin: $spacing-large 0;
       }
     }
   }
@@ -62,16 +63,14 @@
 
   .flexgrid {
     max-width: 100%;
+    position: relative;
     margin: 0 -$collage-item-gutter;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
     flex: 1 0 auto; /* flex-grow, flex-shrink, flex-basis */
-
-    img {
-      max-width: 100%;
-    }
 
     &--nested {
       flex-direction: column;
@@ -80,7 +79,9 @@
   }
   .flexcell {
     padding: $collage-item-gutter;
+    position: relative;
     max-width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,13 +102,12 @@
 
     }
     &--bottom {
-
     }
     img {
-      max-width: 100%;
+      width: 100%;
     }
   }
-  
+
   &__content {
     z-index: $z-index-collage-content;
     align-self: center;

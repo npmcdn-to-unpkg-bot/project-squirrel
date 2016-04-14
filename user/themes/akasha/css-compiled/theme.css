@@ -208,7 +208,8 @@ a, a:visited {
   zoom: 1; }
   .home__projects__content__row {
     display: flex;
-    width: 100%; }
+    width: 100%;
+    margin: 2rem 0; }
 .home .gallery--home {
   max-width: 58rem;
   margin: 0 0 0 1rem; }
@@ -226,6 +227,7 @@ a, a:visited {
 
 .collage .flexgrid {
   max-width: 100%;
+  position: relative;
   margin: -0.75rem;
   display: flex;
   flex-direction: row;
@@ -233,13 +235,12 @@ a, a:visited {
   align-items: stretch;
   flex: 1 0 auto;
   /* flex-grow, flex-shrink, flex-basis */ }
-  .collage .flexgrid img {
-    max-width: 100%; }
   .collage .flexgrid--nested {
     flex-direction: column;
     margin: -0.75rem; }
 .collage .flexcell {
   padding: 0.75rem;
+  position: relative;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -251,7 +252,7 @@ a, a:visited {
   display: inline-block;
   width: 80%; }
 .collage__img img {
-  max-width: 100%; }
+  width: 100%; }
 .collage__content {
   z-index: 10;
   align-self: center;
