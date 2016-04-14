@@ -18,4 +18,5 @@ content:
     custom:
       - _intro
       - _projects
+      - _workflow
 ---

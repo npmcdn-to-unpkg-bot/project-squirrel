@@ -14,10 +14,11 @@
     <meta name="robots" content="{{ header.robots }}">
     {% endif %}
     <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.png">
-
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
     <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
 
     {% block stylesheets %}
+      <!-- {% do assets.add('https://fonts.googleapis.com/css?family=Varela+Round',101) %} -->
       {% do assets.add('theme://css-compiled/theme.css',100) %}
 
       {{ assets.css() }}
@@ -27,6 +28,7 @@
       {% do assets.add('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', 200) %}
       {% do assets.add('https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js', 101) %}
       {% do assets.add('https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js', 101) %}
+      
 
       {% do assets.add('theme://js/theme.js', 100) %}
 

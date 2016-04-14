@@ -14,13 +14,14 @@ $spacing-xxxlarge: ($spacing * 4);
 
 $container-max-width: 60rem; /* 960px */
 $collage-img-width: 80%;
-$collage-item-gutter: $spacing-small; /* 12px */
+$collage-item-gutter: 2px; /* 2px */
 
 /* Global typography vars */
 
 $base-font-size:   100%;
 $base-line-height: 150%;
-$base-font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$header-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-smoothing: antialiased;
 
 $font-weight-lighter: 200;
@@ -46,7 +47,7 @@ $font-line-height-xlarge: 2rem;
 
 /* Global <body> vars */
 
-$body-bg:          #F7F7F7;
+$body-bg:          #FFF;
 $body-font-style:  normal;
 $body-font-size:   $base-font-size;
 

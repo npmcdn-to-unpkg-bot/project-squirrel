@@ -1,7 +1,7 @@
 .page--home {
   body {
     /*background-image: -webkit-linear-gradient(287deg,#270530 10%,#196d82 36%,#fff 70%);*/
-    background-image: linear-gradient(163deg,#f9e1e7 10%,#FFF6F2 35%,#f7f7f7 70%);
+    background-image: linear-gradient(163deg,#f9e1e7 10%,#FFF6F2 35%,#fff 70%);
     background-size: 100% 1100px;
     background-repeat: no-repeat;    
     /*background: url(https://unsplash.it/1600/900?image=830) no-repeat;*/
@@ -18,12 +18,9 @@
     &__content {
       @include max-container(20vh auto);
       h2 {
+        @include header-chapter-typography(hero);
         max-width: 50rem;
         margin: 0 auto;
-        font-size: 26px;
-        font-weight: 400;
-        line-height: 1.5;
-        text-align: center;
       }
     }
   }
@@ -39,18 +36,17 @@
     }
   }
 
-  .gallery--home {
-    max-width: $container-max-width - 2;
-    margin: 0 0 0 1rem;
-    &__item {
-      display: inline-block;
-    }
-    img {
-      max-width: 49%;
-      margin-bottom: 2px;
-      border-radius: 2px;
+  &__workflow {
+    &__content {
+      @include max-container(20vh auto);
+      h2 {
+        @include header-chapter-typography(large, center);
+        max-width: 50rem;
+        margin: 0 auto;
+      }
     }
   }
+
 }
 
 
@@ -95,11 +91,12 @@
       display: inline-block;
       width: $collage-img-width;
     }
-    &--horizontal {
-
-    }
     &--vertical {
-
+    }
+    &--horizontal {
+/*      position: absolute;
+      top: -50px;
+      width: 120%;*/
     }
     &--bottom {
     }
@@ -117,9 +114,8 @@
     margin-left: -35px;
     letter-spacing: 0.35px;
     h2 {
-      font-size: 36px;
+      @include header-chapter-typography(large);
       margin: 30px auto;
-      letter-spacing: 2px;
     }
     p {
       font-size: 13px;
