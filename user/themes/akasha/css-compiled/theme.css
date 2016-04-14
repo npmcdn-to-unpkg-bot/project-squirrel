@@ -212,7 +212,7 @@ a, a:visited {
   .home__projects__content__row {
     display: flex;
     width: 100%;
-    padding: 0 0 4px; }
+    padding: 0 0 2px; }
 .home__workflow__content {
   margin: 20vh auto;
   max-width: 960px;
@@ -225,7 +225,7 @@ a, a:visited {
   .home__workflow__content h2 {
     line-height: 1.3;
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 300;
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
     text-align: center;
@@ -256,7 +256,6 @@ a, a:visited {
   align-items: stretch;
   flex: 1; }
 .collage__img {
-  background: darkgrey;
   width: 476px;
   min-height: 160px;
   display: flex;
@@ -279,8 +278,7 @@ a, a:visited {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
-    width: 100%;
-    border-radius: 2px; }
+    width: 100%; }
 .collage__content {
   /* The textual literal content */
   z-index: 10;
@@ -293,7 +291,7 @@ a, a:visited {
   .collage__content h2 {
     line-height: 1.3;
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 300;
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
     margin: 30px auto; }

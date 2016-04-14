@@ -31,7 +31,7 @@
       &__row {
         display: flex;
         width: 100%;
-        padding: 0 0 $collage-item-gutter * 2;
+        padding: 0 0 $collage-item-gutter;
       }
     }
   }
@@ -87,7 +87,6 @@
   }
 
   &__img {
-    background: darkgrey;
     width: ($container-max-width - $collage-item-gutter * 4) / 2;
     min-height: 160px;
     display: flex;
@@ -115,7 +114,6 @@
       min-width: 100%;
       min-height: 100%;
       width: 100%;
-      border-radius: $collage-item-gutter;
     }
   }
 
