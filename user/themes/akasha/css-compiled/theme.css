@@ -1,5 +1,6 @@
 /* Spacing */
 /* 960px */
+/* 12px */
 /* Global typography vars */
 /* 10.8px */
 /* 12px */
@@ -223,6 +224,28 @@ a, a:visited {
   /* For masonry to set responsive horizontal gutter */
   width: 0.5%; }
 
+.collage .flexgrid {
+  max-width: 100%;
+  margin: -0.75rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex: 1 0 auto;
+  /* flex-grow, flex-shrink, flex-basis */ }
+  .collage .flexgrid img {
+    max-width: 100%; }
+  .collage .flexgrid--nested {
+    flex-direction: column;
+    margin: -0.75rem; }
+.collage .flexcell {
+  padding: 0.75rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex: 1; }
 .collage__img--hero {
   float: left;
   display: inline-block;

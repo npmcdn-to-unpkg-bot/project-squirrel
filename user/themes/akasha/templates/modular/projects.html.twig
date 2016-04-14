@@ -1,7 +1,7 @@
 <div class="home__projects">
   <section class="home__projects__content collage">
 
-    <div class="home__projects__content__row clear">
+    <div class="home__projects__content__row">
       <figure class="collage__img collage__img--hero">
         <img src="{{ page.media['project-hero.jpg'].url }}">
       </figure>
@@ -12,7 +12,13 @@
         </h2>
         <p>{{ page.header.project_desc }}</p>
       </div>
-      <div class="clearfix"></div>
+    </div><!-- .home__projects__content__row -->
+
+<!--
+     <div class="home__projects__content__row">
+      <figure class="collage__img collage__img--vertical">
+        <img src="{{ page.media['project-vertical.jpg'].url }}">
+      </figure>
     </div>
 
     <div class="home__projects__content__row">
@@ -20,6 +26,41 @@
         <img src="{{ page.media['project-horizontal.jpg'].url }}">
       </figure>
     </div>
+
+    <div class="home__projects__content__row">
+      <figure class="collage__img collage__img--bottom">
+        <img src="{{ page.media['project-bottom.jpg'].url }}">
+      </figure>
+    </div> 
+  -->
+
+    <div class="home__projects__content__row">
+
+      <div class="flexgrid">
+        <div class="flexcell">
+          <figure class="collage__img collage__img--vertical">
+            <img src="{{ page.media['project-vertical.jpg'].url }}">
+          </figure>
+        </div><!-- .flexcell -->
+        <div class="flexcell">
+          <div class="flexgrid flexgrid--nested">
+            <div class="flexcell">
+              <figure class="collage__img collage__img--horizontal">
+                <img src="{{ page.media['project-horizontal.jpg'].url }}">
+              </figure>
+            </div>
+            <div class="flexcell">
+              <figure class="collage__img collage__img--bottom">
+                <img src="{{ page.media['project-bottom.jpg'].url }}">
+              </figure>
+            </div>
+          </div><!-- .flexgrid .nested -->
+        </div><!-- .flexcell -->
+      </div><!-- .flexgrid -->
+
+    </div><!-- .home__projects__content__row -->
+
+
 
   </section>
 </div>
