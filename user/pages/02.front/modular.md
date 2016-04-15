@@ -17,6 +17,8 @@ content:
     dir: asc
     custom:
       - _intro
-      - _projects
+      - _projects-cos
+      - _projects-lolita
+      - _projects-life
       - _workflow
 ---
