@@ -2,4 +2,4 @@
 title: Intro
 ---
 ## Tenori Taiga.
-Photographer.
+## Photographer.
