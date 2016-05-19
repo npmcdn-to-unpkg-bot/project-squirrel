@@ -18,7 +18,4 @@ content:
     custom:
       - _intro
       - _projects-cos
-      - _projects-lolita
-      - _projects-life
-      - _workflow
 ---

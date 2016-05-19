@@ -66,6 +66,7 @@
   }
   @if $headerSize == 'home' {
     line-height: 1.1;
+    font-size: 48px;
     font-size: 4.25rem;
     font-weight: 900;
     font-family: $header-font-family;
