@@ -21,6 +21,9 @@ $container-max-width-rem: 60rem; /* 960px */
 $container-max-width: 960px; /* 960px */
 $content-block-padding: $spacing-xxxlarge + $spacing-xlarge;
 
+// Global header
+$sitenav-logo-width: 70px;
+
 // UI components - home page
 $content-row-margin-home: $spacing-large;
 $collage-img-width: 80%;
@@ -42,7 +45,7 @@ $z-index-herobg: 0;
 $border-radius-normal: ($spacing * 0.1875); /* 3px */
 
 
-/* Global typography vars */
+/* Global typography variables */
 
 $base-font-size:   100%;
 $base-line-height: 150%;
@@ -71,23 +74,14 @@ $font-line-height: 1.2;
 $font-line-height-large: 1.5;
 $font-line-height-xlarge: 2;
 
-
-
-/* Global <body> vars */
-
+// <body>
 $body-bg:          #FFF;
 $body-font-style:  normal;
 $body-font-size:   $base-font-size;
 
 
 
-/* Header sitenav vars */
-
-$sitenav-logo-width: 70px;
-
-
-
-/* Variables for h1, h2, h3, h4, h5, h6 */
+/* Global typography variables for h1, h2, h3, h4, h5, h6 */
 
 $h1-font-size: 2.25rem;
 $h2-font-size: 2rem;
