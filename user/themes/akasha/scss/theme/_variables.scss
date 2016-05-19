@@ -1,4 +1,4 @@
-/* Spacing */
+/* Spacing - base */
 
 $rem-base: 16px;
 
@@ -12,12 +12,23 @@ $spacing-xlarge: ($spacing * 2.5);
 $spacing-xxlarge: ($spacing * 3);
 $spacing-xxxlarge: ($spacing * 4);
 
+
+
+/* Spacing - elements, which all derives from base */
+
+// Global containers
 $container-max-width-rem: 60rem; /* 960px */
 $container-max-width: 960px; /* 960px */
+$content-block-padding: $spacing-xxxlarge + $spacing-xlarge;
+
+// UI components - home page
 $content-row-margin-home: $spacing-large;
 $collage-img-width: 80%;
 $collage-img-height-normal: 300px;
 $collage-item-gutter: 2px; /* 2px */
+
+// Media Query Ranges
+$media-query-reduced-width: 90%;
 
 
 
@@ -55,9 +66,10 @@ $font-size-large:  1.2rem; /* 19.2px */
 $font-size-xlarge: 1.5rem; /* 24px */
 $font-size-xxlarge: 2rem; /* 32px */
 
-$font-line-height: 1.2rem;
-$font-line-height-large: 1.5rem;
-$font-line-height-xlarge: 2rem;
+$font-line-height-small: 1.05;
+$font-line-height: 1.2;
+$font-line-height-large: 1.5;
+$font-line-height-xlarge: 2;
 
 
 
@@ -94,6 +106,7 @@ $h6-line-height: 1.5; // 21px
 
 
 /* Colors - base */
+
 // monochrome
 $white: #fff;
 $black: #444;
@@ -106,19 +119,20 @@ $dark-small: lighten($dark-medium, 20%);
 
 // brand colors
 $brand-color: #4a4f6a; /* navy */
+$secondary-color: #ad9571; /* gold */
 
+// blues
 $blue-most: #142736; /* midnight */
 $blue-medium: #495d77; /* denim */
 $blue-small: #3887be; /* blue */
 
+// other primary colors
 $orange: #f9886c;
 $pink: #ed6498;
 $yellow: #f1f075;
 $purple: #8a8acb;
 $green: #56b881;
 $red: #e55e5e;
-
-$secondary-color: #ad9571; /* gold */
 
 
 
@@ -138,26 +152,5 @@ $utility-block-bg: $light-medium;
 $home-nav-bg: $utility-block-bg;
 $home-projects-bg: $blue-most;
 
-
 // Borders
-
 $header-border-pink: #f9e1e7 0%, #f9e1e7 100%;
-/*
-// Menu Box Shadow
-
-// Links css arrows to variables
-
-// Icons
-
-// Modal
-
-// Form
-
-// Checkbox
-
-
-// Advertisement sizes
-*/
-
-// Media Query Ranges
-$media-query-reduced-width: 90%;

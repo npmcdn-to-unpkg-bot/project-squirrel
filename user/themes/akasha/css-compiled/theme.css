@@ -1,4 +1,5 @@
-/* Spacing */
+/* Spacing - base */
+/* Spacing - elements, which all derives from base */
 /* 960px */
 /* 960px */
 /* 2px */
@@ -17,27 +18,11 @@
 /* Variables for h1, h2, h3, h4, h5, h6 */
 /* Colors - base */
 /* navy */
+/* gold */
 /* midnight */
 /* denim */
 /* blue */
-/* gold */
 /* Colors - elements, which all derives from base */
-/*
-// Menu Box Shadow
-
-// Links css arrows to variables
-
-// Icons
-
-// Modal
-
-// Form
-
-// Checkbox
-
-
-// Advertisement sizes
-*/
 /* Global utilities */
 /* Global sitenav link styles */
 /* Chapter header styles */
@@ -265,6 +250,21 @@ a, a:visited {
     .home__navi__block small {
       font-size: 0.75rem;
       text-transform: uppercase; }
+.home__tagline {
+  background: #142736; }
+  .home__tagline__content {
+    margin: 0 auto;
+    max-width: 960px;
+    position: relative;
+    zoom: 1; }
+    .home__tagline__content h2 {
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      line-height: 1.05;
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 6.5rem 0; }
 .home__projects {
   background: #142736; }
   .home__projects__content {

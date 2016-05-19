@@ -68,6 +68,23 @@
     }
   }
 
+  &__tagline {
+    background: $home-projects-bg;
+    &__content {
+      @include max-container(0 auto);
+      h2 {
+        color: white;
+        text-align: center;
+        font-size: $font-size-xxlarge;
+        line-height: $font-line-height-small;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: $content-block-padding 0;
+      }
+    }
+
+  }
+
   &__projects {
     background: $home-projects-bg;
     &__content {
