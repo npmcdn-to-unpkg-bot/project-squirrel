@@ -24,14 +24,14 @@ $content-block-padding: $spacing-xxxlarge + $spacing-xlarge;
 // Global header
 $sitenav-logo-width: 70px;
 
-// UI components - home page
+// Global media Query Ranges
+$media-query-reduced-width: 90%;
+
+// Components - home page
 $content-row-margin-home: $spacing-large;
 $collage-img-width: 80%;
 $collage-img-height-normal: 300px;
 $collage-item-gutter: 2px; /* 2px */
-
-// Media Query Ranges
-$media-query-reduced-width: 90%;
 
 
 
