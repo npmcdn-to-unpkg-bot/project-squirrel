@@ -28,7 +28,7 @@ $z-index-collage-content: 10;
 $z-index-collage-img: 9;
 $z-index-floating-element: 2;
 $z-index-herobg: 0;
-$border-radius-normal: $spacing-xxsmall;
+$border-radius-normal: ($spacing * 0.1875); /* 3px */
 
 
 /* Global typography vars */
@@ -93,20 +93,50 @@ $h6-line-height: 1.5; // 21px
 
 
 
-/* Colors */
+/* Colors - base */
+// monochrome
+$white: #fff;
+$black: #444;
+$light-most: $white;
+$light-medium: #f8f8f8;
+$light-small: darken($light-medium, 5%);
+$dark-most: $black;
+$dark-medium: lighten($dark-most, 10%);
+$dark-small: lighten($dark-medium, 20%);
+
+// brand colors
+$brand-color: #4a4f6a; /* navy */
+
+$blue-most: #142736; /* midnight */
+$blue-medium: #495d77; /* denim */
+$blue-small: #3887be; /* blue */
+
+$orange: #f9886c;
+$pink: #ed6498;
+$yellow: #f1f075;
+$purple: #8a8acb;
+$green: #56b881;
+$red: #e55e5e;
+
+$secondary-color: #ad9571; /* gold */
+
+
+
+/* Colors - elements, which all derives from base */
 
 // Typography
-$base-font-color: #4a4f6a; /* navy */
-$secondary-font-color: #ad9571 /* gold */
+$base-font-color: $dark-medium;
+$secondary-font-color: $orange;
 
 // Links
-$link-color-primary: #999;
-$link-color-hover: #444;
+$link-color-primary: $blue-small;
+$link-color-hover: lighten($link-color-primary, 10%);
 $border-color-sitenav: rgba(49,78,95,.075);
 
 // Backgrounds
-$home-nav-bg: lightgrey;
-$home-projects-bg: linear-gradient(#fff, #f9e1e7);
+$utility-block-bg: $light-medium;
+$home-nav-bg: $utility-block-bg;
+$home-projects-bg: $blue-most;
 
 
 // Borders

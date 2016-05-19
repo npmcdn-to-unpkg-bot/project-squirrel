@@ -1,18 +1,21 @@
 <div class="home__intro">
   <section class="home__intro__content">
     {{ content }}
+
+    <nav class="home__navi">
+      <ul>
+        {% for i in 1..4 %}
+        <li>
+          <a href="#section-project" class="home__navi__block">
+            <span>Gallery</span>
+            <small>Works overview</small>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
   </section>
 </div>
 
-<nav class="home__navi">
-  <ul>
-    {% for i in 1..4 %}
-    <li>
-      <a href="#section-project" class="home__navi__block">
-        <span>Gallery</span>
-        <small>Works overview</small>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</nav>
+
+
