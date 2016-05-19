@@ -1,5 +1,4 @@
 ---
 title: Intro
 ---
-## Tenori Taiga.
-## Photographer.
+## Tenori Taiga   Photographer

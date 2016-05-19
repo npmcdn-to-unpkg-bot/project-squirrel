@@ -19,6 +19,18 @@ $collage-img-width: 80%;
 $collage-img-height-normal: 300px;
 $collage-item-gutter: 2px; /* 2px */
 
+
+
+/* Z-indices, border radix */
+
+$z-index-header: 900;
+$z-index-collage-content: 10;
+$z-index-collage-img: 9;
+$z-index-floating-element: 2;
+$z-index-herobg: 0;
+$border-radius-normal: $spacing-xxsmall;
+
+
 /* Global typography vars */
 
 $base-font-size:   100%;
@@ -40,7 +52,8 @@ $font-size-small:  0.875rem; /* 14px */
 $font-size-normal: 1rem; /* 16px */
 $font-size-medium: 1.075rem;
 $font-size-large:  1.2rem; /* 19.2px */
-$font-size-xlarge: 2rem;
+$font-size-xlarge: 1.5rem; /* 24px */
+$font-size-xxlarge: 2rem; /* 32px */
 
 $font-line-height: 1.2rem;
 $font-line-height-large: 1.5rem;
@@ -88,21 +101,14 @@ $link-color-hover: #444;
 $border-color-sitenav: rgba(49,78,95,.075);
 
 // Backgrounds
+$home-nav-bg: lightgrey;
+$home-projects-bg: linear-gradient(#fff, #f9e1e7);
 
-// Opacity Colors
-
-$opacity-color: rgba(0,0,0,0.12);
-$opacity-color-light: rgba(0,0,0,0.06);
-$opacity-color-light-hex: #F0F0F0;
-$opacity-color-dark: rgba(0,0,0,0.2);
-$opacity-color-darker: rgba(0,0,0,0.5);
-$opacity-color-dark-hex: #CCC;
-$opacity-color-white: rgba(255,255,255,0.3);
 
 // Borders
 
 $header-border-pink: #f9e1e7 0%, #f9e1e7 100%;
-
+/*
 // Menu Box Shadow
 
 // Links css arrows to variables
@@ -115,12 +121,9 @@ $header-border-pink: #f9e1e7 0%, #f9e1e7 100%;
 
 // Checkbox
 
-// Z-indices
-$z-index-header: 900;
-$z-index-collage-content: 10;
-$z-index-collage-img: 9;
 
 // Advertisement sizes
+*/
 
 // Media Query Ranges
 $media-query-reduced-width: 90%;
