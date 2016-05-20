@@ -3,12 +3,12 @@
     <h1 class="bigtext bigtext--homehero">{{ page.header.herotext }}</h1>
 
     <nav class="navblock navblock--homehero">
-      <ul>
+      <ul class="navblock__list">
         {% for i in 1..4 %}
-        <li>
-          <a href="#section-project" class="home__navi__block">
-            <span>Gallery</span>
-            <small>Works overview</small>
+        <li class="navblock__listitem">
+          <a href="#section-project" class="navblock__listitem__link">
+            <span class="navblock__listitem__title">Gallery</span>
+            <small class="navblock__listitem__meta">Works overview</small>
           </a>
         </li>
         {% endfor %}

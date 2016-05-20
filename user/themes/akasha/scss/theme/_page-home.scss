@@ -15,37 +15,6 @@
 }
 
 .home {
-  &__navi {
-
-    ul {
-      display: table;
-      width: 100%;
-    }
-    li {
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
-      &:hover {
-        background-color: $light-small;
-        border-radius: $border-radius-normal;
-      }
-    }
-    &__block {
-      display: block;
-      padding: $spacing-medium 0;
-      span {
-        display: block;
-        font-size: $font-size-xlarge;
-        font-weight: 600;
-        text-transform: none;
-        margin: 0 0 $spacing-xsmall;
-      }
-      small {
-        font-size: $font-size-xsmall;
-        text-transform: uppercase;
-      }
-    }
-  }
 
   &__tagline {
     background: $home-projects-bg;

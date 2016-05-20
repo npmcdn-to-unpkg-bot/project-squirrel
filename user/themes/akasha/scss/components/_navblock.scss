@@ -3,10 +3,38 @@
   max-width: $container-max-width;
   z-index: $z-index-floating-element;
   border-radius: $border-radius-normal;
+  background-color: $home-nav-bg;
 }
 .navblock--homehero {
-  background-color: $home-nav-bg;
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+.navblock__list {
+  display: table;
+  width: 100%;
+}
+.navblock__listitem {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  &:hover {
+    background-color: $light-small;
+    border-radius: $border-radius-normal;
+  }
+}
+.navblock__listitem__link {
+  display: block;
+  padding: $spacing-medium 0;
+}
+.navblock__listitem__title {
+  display: block;
+  font-size: $font-size-xlarge;
+  font-weight: 600;
+  text-transform: none;
+  margin: 0 0 $spacing-xsmall;
+}
+.navblock__listitem__meta {
+  font-size: $font-size-xsmall;
+  text-transform: uppercase;
 }
