@@ -1,12 +1,14 @@
 // TEMPLATE COMPONENTS
 
-// Core, global
+// Global core
 @import "theme/variables";
 @import "theme/mixins";
 @import "theme/core";
 
-// Components, global
-@import "theme/header";
+// Global utils
+
+// Components
+@import "components/header";
 
 // Page specific
 @import "theme/page-home";
