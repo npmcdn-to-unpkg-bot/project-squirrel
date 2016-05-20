@@ -15,11 +15,6 @@
     position: relative;
     z-index: $z-index-herobg;
     position: relative;
-
-    &__content {
-      @include max-container(0 auto);
-      height: 100%;
-    }
   }
 
   &__navi {
