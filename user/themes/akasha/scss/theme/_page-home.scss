@@ -3,28 +3,19 @@
     display: none;
   }
 }
+.home__intro {
+  height: 100vh;
+  background-color: red;
+  background-image: url(http://i.imgur.com/jzWoK90.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: $z-index-herobg;
+}
 
 .home {
-  &__intro {
-    height: 100vh;
-    background-color: red;
-    background-image: url(http://i.imgur.com/jzWoK90.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: $z-index-herobg;
-    position: relative;
-  }
-
   &__navi {
-    @include max-container(-$spacing-large auto);
-    background-color: $home-nav-bg;
-    z-index: $z-index-floating-element;
-    border-radius: $border-radius-normal;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 
     ul {
       display: table;

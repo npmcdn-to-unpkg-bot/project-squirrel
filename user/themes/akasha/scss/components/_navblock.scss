@@ -1,0 +1,12 @@
+.navblock {
+  margin: -$spacing-large auto;
+  max-width: $container-max-width;
+  z-index: $z-index-floating-element;
+  border-radius: $border-radius-normal;
+}
+.navblock--homehero {
+  background-color: $home-nav-bg;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
