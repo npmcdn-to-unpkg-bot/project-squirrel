@@ -250,7 +250,7 @@ a, a:visited {
       font-size: 0.75rem;
       text-transform: uppercase; }
 .home__tagline {
-  background: #142736; }
+  background: linear-gradient(#495d77, #364457); }
   .home__tagline__content {
     margin: 0 auto;
     max-width: 960px;
@@ -265,7 +265,7 @@ a, a:visited {
       margin: 0 auto;
       padding: 6.5rem 0; }
 .home__projects {
-  background: #142736; }
+  background: linear-gradient(#495d77, #364457); }
   .home__projects__content {
     margin: 0 auto;
     max-width: 960px;
@@ -275,6 +275,8 @@ a, a:visited {
       display: flex;
       width: 100%;
       padding: 0 0 2px; }
+  .home__projects img {
+    border-radius: 0.1875rem; }
 .home__workflow__content {
   margin: 20vh auto;
   max-width: 960px;
@@ -324,9 +326,8 @@ a, a:visited {
   align-items: center;
   overflow: hidden; }
   .collage__img--hero {
-    float: left;
     display: inline-block;
-    width: 80%; }
+    width: 100%; }
   .collage__img--vertical {
     height: 604px; }
   .collage__img--horizontal {
@@ -341,26 +342,6 @@ a, a:visited {
     min-width: 100%;
     min-height: 100%;
     width: 100%; }
-.collage__content {
-  /* The textual literal content */
-  z-index: 10;
-  align-self: center;
-  display: inline-block;
-  float: left;
-  max-width: 300px;
-  margin-left: -35px;
-  letter-spacing: 0.35px; }
-  .collage__content h2 {
-    line-height: 1.3;
-    font-size: 36px;
-    font-weight: 300;
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: 1px;
-    margin: 30px auto; }
-  .collage__content p {
-    font-size: 13px;
-    line-height: 1.6;
-    color: #888; }
 
 .header__border {
   padding-bottom: 5px;

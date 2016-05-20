@@ -96,6 +96,10 @@
         padding: 0 0 $collage-item-gutter;
       }
     }
+
+    img {
+      border-radius: $border-radius-normal;
+    }
   }
 
   &__workflow {
@@ -155,9 +159,8 @@
     align-items: center;
     overflow: hidden;
     &--hero {
-      float: left;
       display: inline-block;
-      width: $collage-img-width;
+      width: 100%;
     }
     &--vertical {
       height: $collage-img-height-normal * 2 + $collage-item-gutter * 2;
@@ -176,25 +179,6 @@
       min-width: 100%;
       min-height: 100%;
       width: 100%;
-    }
-  }
-
-  &__content { /* The textual literal content */
-    z-index: $z-index-collage-content;
-    align-self: center;
-    display: inline-block;
-    float: left;
-    max-width: 300px;
-    margin-left: -35px;
-    letter-spacing: 0.35px;
-    h2 {
-      @include header-chapter-typography(large);
-      margin: 30px auto;
-    }
-    p {
-      font-size: 13px;
-      line-height: 1.6;
-      color: #888;
     }
   }
 }

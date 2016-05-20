@@ -29,7 +29,6 @@ $media-query-reduced-width: 90%;
 
 // Components - home page
 $content-row-margin-home: $spacing-large;
-$collage-img-width: 80%;
 $collage-img-height-normal: 300px;
 $collage-item-gutter: 2px; /* 2px */
 
@@ -144,7 +143,7 @@ $border-color-sitenav: rgba(49,78,95,.075);
 // Backgrounds
 $utility-block-bg: $light-medium;
 $home-nav-bg: $utility-block-bg;
-$home-projects-bg: $blue-most;
+$home-projects-bg: linear-gradient($blue-medium, darken($blue-medium, 10%));
 
 // Borders
 $header-border-pink: #f9e1e7 0%, #f9e1e7 100%;
