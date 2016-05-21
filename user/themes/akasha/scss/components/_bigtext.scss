@@ -1,7 +1,7 @@
 .bigtext {
   color: white;
   margin: 0 auto;
-  font-weight: 500;
+  font-weight: $font-weight-medium;
   font-size: $font-size-xxlarge;
   line-height: $font-line-height-small;
   font-family: $strong-font-family;
@@ -9,7 +9,7 @@
 .bigtext--homehero {
   font-size: 48px;
   font-size: 4.25rem;
-  font-weight: 800;
+  font-weight: $font-weight-bolder;
   line-height: 1.1;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -23,6 +23,7 @@
   padding: $content-block-padding 0 ($content-block-padding / 3);
 }
 .bigtext--workflow {
+  color: $dark-medium;
   line-height: $font-line-height;
   padding-bottom: $spacing-large;
 }
