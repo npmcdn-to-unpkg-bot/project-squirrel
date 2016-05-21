@@ -1,3 +1,6 @@
+$collage-gutter: $spacing-xsmall; /* 8px */
+$collage-tall-height: 50vw;
+
 .collage {
 
 }
@@ -11,19 +14,19 @@
 .collage__half {
   width: calc(50% - 4px);
   float: left;
-  height: 650px;
+  height: $collage-tall-height;
   &:first-child {
     margin-right: $collage-gutter;
   }
 }
 .collage__figure {
-  min-height: 300px;
+  min-height: $collage-tall-height / 3;
   border-radius: $border-radius-normal;
   background-size: cover;
   background-position: center;
 }
 .collage__figure--hero {
-
+  height: $collage-tall-height * 0.75;
 }
 .collage__figure--tall {
   height: 100%;

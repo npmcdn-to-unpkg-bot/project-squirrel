@@ -8,3 +8,12 @@
 .container--homehero {
   height: 100%;
 }
+/* Subcontainer must be used inside container */
+.subcontainer {
+
+}
+.subcontainer--left {
+  margin-right: 50%;
+  width: 50%;
+  max-width: $container-max-width * 0.6;
+}

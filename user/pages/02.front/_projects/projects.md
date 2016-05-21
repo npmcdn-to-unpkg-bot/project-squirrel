@@ -1,3 +1,4 @@
 ---
-tagline: Taiga is an experienced coser-turned-photographer that helps you capture the best characters with the most beautiful you.
+tagline: Capture The Best Characters
+paragraph: Hi, I am Taiga, an experienced coser-turned-photographer.
 ---

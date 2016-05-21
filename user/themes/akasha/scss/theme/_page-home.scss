@@ -13,34 +13,26 @@
   position: relative;
   z-index: $z-index-herobg;
 }
-
 .home__tagline {
   margin-bottom: $spacing-xxlarge;
 }
-
 .home__projects {
   background: $home-projects-bg;
+  position: relative;
 }
-
-.home {
-  &__workflow {
-    &__content {
-      @include max-container(20vh auto);
-      &__row {
-        display: flex;
-        width: 100%;
-        margin: $content-row-margin-home 0;
-      }
-      h2 {
-        @include header-chapter-typography(large, center);
-        max-width: 50rem;
-        margin: 0 auto;
-      }
-    }
-  }
-
+.home__projects__curtain {
+  background: navy;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-
-.header__border {
-  @include header-border(5px, 85%, $header-border-pink);
+.home__workflow {
+  background-color: rgb(202, 210, 211);
+  background-image: url(https://cloud.githubusercontent.com/assets/1095291/15447399/14e4a7ee-1ef6-11e6-9bac-3360ff3f0eaf.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: $content-block-padding 0 ($content-block-padding / 3);
+  min-height: 800px;
 }

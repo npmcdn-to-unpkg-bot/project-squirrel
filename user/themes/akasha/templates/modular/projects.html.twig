@@ -3,6 +3,7 @@
     <section class="container">
       <h2 class="bigtext bigtext--tagline">{{ page.header.tagline }}</h2>
       <ul class="shortlist shortlist--tagline">
+        {{ page.header.paragraph }}
         {% for t in 1..4 %}
         <li class="shortlist__item">Lifestyle</li>
         {% endfor %}
@@ -33,4 +34,8 @@
     </div><!-- .collage__row -->
 
   </section>
+
+<!--   <div class="home__projects__curtain">
+    <a href="" role="button" class="button button--projects">More of my works</a>
+  </div> -->
 </div>
