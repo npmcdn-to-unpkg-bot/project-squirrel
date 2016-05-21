@@ -17,5 +17,5 @@ content:
     dir: asc
     custom:
       - _intro
-      - _projects-cos
+      - _projects
 ---

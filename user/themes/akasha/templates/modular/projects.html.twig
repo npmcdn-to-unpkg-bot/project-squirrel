@@ -1,11 +1,22 @@
 <div class="home__projects">
-  <section class="home__projects__content collage">
+  <div class="home__tagline">
+    <section class="container">
+      <h2 class="bigtext bigtext--tagline">{{ page.header.tagline }}</h2>
+      <ul class="shortlist shortlist--tagline">
+        {% for t in 1..4 %}
+        <li class="shortlist__item">Lifestyle</li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
 
-    <div class="home__projects__content__row">
+  <section class="collage collage--home">
+
+    <div class="collage__row">
       <figure class="collage__img collage__img--hero">
-        <img src="{{ page.media['project-hero.jpg'].url }}">
+        <img class="collage__img__img" src="{{ page.media['project-hero.jpg'].url }}">
       </figure>
-    </div><!-- .home__projects__content__row -->
+    </div><!-- .collage__row -->
 
     <div class="home__projects__content__row">
 
@@ -32,8 +43,6 @@
       </div><!-- .flexgrid -->
 
     </div><!-- .home__projects__content__row -->
-
-
 
   </section>
 </div>

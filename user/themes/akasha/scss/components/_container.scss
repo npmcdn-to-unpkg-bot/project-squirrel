@@ -1,7 +1,9 @@
 .container {
   position: relative;
+  width: 83.3333%;
   max-width: $container-max-width;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container--homehero {
   height: 100%;

@@ -19,7 +19,7 @@ $spacing-xxxlarge: ($spacing * 4);
 // Global containers
 $container-max-width-rem: 60rem; /* 960px */
 $container-max-width: 960px; /* 960px */
-$content-block-padding: $spacing-xxxlarge + $spacing-xlarge;
+$content-block-padding: $spacing-xxxlarge + $spacing-xlarge; /* 6.5rem */
 
 // Global header
 $sitenav-logo-width: 70px;
