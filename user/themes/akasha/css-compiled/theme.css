@@ -253,10 +253,10 @@ a, a:visited {
 .bigtext {
   color: white;
   margin: 0 auto;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 2rem;
   line-height: 1.05;
-  font-family: "Rubik", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .bigtext--homehero {
   font-size: 48px;
@@ -272,7 +272,7 @@ a, a:visited {
 .bigtext--tagline {
   text-align: center;
   max-width: 80%;
-  padding: 6.5rem 0 2.16667rem; }
+  padding: 0 0 2.5rem; }
 
 .bigtext--workflow {
   color: #5e5e5e;
@@ -311,6 +311,7 @@ a, a:visited {
   display: block;
   font-size: 1.5rem;
   font-weight: 700;
+  font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
   margin: 0 0 0.5rem; }
 
@@ -362,7 +363,9 @@ a, a:visited {
 
 .home__projects {
   background: linear-gradient(#495d77, #364457);
-  position: relative; }
+  padding: 6.5rem 0 3.25rem;
+  position: relative;
+  z-index: -1; }
 
 .home__projects__curtain {
   background: navy;
@@ -377,7 +380,7 @@ a, a:visited {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 6.5rem 0 2.16667rem;
+  padding: 6.5rem 0 3.25rem;
   min-height: 800px; }
 
 /*# sourceMappingURL=theme.css.map */

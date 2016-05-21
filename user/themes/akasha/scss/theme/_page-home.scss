@@ -18,7 +18,9 @@
 }
 .home__projects {
   background: $home-projects-bg;
+  padding: $content-block-padding 0 ($content-block-padding / 2);
   position: relative;
+  z-index: $z-index-bg;
 }
 .home__projects__curtain {
   background: navy;
@@ -33,6 +35,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: $content-block-padding 0 ($content-block-padding / 3);
+  padding: $content-block-padding 0 ($content-block-padding / 2);
   min-height: 800px;
 }

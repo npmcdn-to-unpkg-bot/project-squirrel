@@ -1,7 +1,7 @@
 .bigtext {
   color: white;
   margin: 0 auto;
-  font-weight: $font-weight-medium;
+  font-weight: $font-weight-bold;
   font-size: $font-size-xxlarge;
   line-height: $font-line-height-small;
   font-family: $strong-font-family;
@@ -20,7 +20,7 @@
 .bigtext--tagline {
   text-align: center;
   max-width: 80%;
-  padding: $content-block-padding 0 ($content-block-padding / 3);
+  padding: 0 0 $spacing-xlarge;
 }
 .bigtext--workflow {
   color: $dark-medium;
