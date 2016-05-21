@@ -23,20 +23,6 @@
 }
 
 .home {
-  &__projects {
-    &__content {
-      &__row {
-        display: flex;
-        width: 100%;
-        padding: 0 0 $collage-item-gutter;
-      }
-    }
-
-    img {
-      border-radius: $border-radius-normal;
-    }
-  }
-
   &__workflow {
     &__content {
       @include max-container(20vh auto);
@@ -53,69 +39,6 @@
     }
   }
 
-}
-
-
-/* Homepage collage / gallery utilities */
-.collage {
-
-  .flexgrid {
-    max-width: 100%;
-    position: relative;
-    margin: 0 -$collage-item-gutter;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    flex: 1 0 auto; /* flex-grow, flex-shrink, flex-basis */
-
-    &--nested {
-      flex-direction: column;
-      margin: -$collage-item-gutter;
-    }
-  }
-  .flexcell {
-    padding: $collage-item-gutter;
-    position: relative;
-    max-width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    flex: 1;
-  }
-
-  &__img {
-    width: ($container-max-width - $collage-item-gutter * 4) / 2;
-    min-height: 160px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    &--hero {
-      display: inline-block;
-      width: 100%;
-    }
-    &--vertical {
-      height: $collage-img-height-normal * 2 + $collage-item-gutter * 2;
-    }
-    &--horizontal {
-      height: $collage-img-height-normal;
-/*      position: absolute;
-      top: -50px;
-      width: 120%;*/
-    }
-    &--bottom {
-      height: $collage-img-height-normal;
-    }
-    img {
-      flex-shrink: 0;
-      min-width: 100%;
-      min-height: 100%;
-      width: 100%;
-    }
-  }
 }
 
 .header__border {

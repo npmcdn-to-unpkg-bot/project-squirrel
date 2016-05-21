@@ -1,65 +1,330 @@
-/*
-Error: Invalid CSS after "_collage": expected "{", was ""
-        on line 1 of scss/components/_collage.scss
-        from line 12 of scss/theme.scss
-
-1: _collage
-
-Backtrace:
-scss/components/_collage.scss:1
-scss/theme.scss:12
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1162:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1098:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:1093:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:638:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:632:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:657:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:647:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/scss/parser.rb:42:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/engine.rb:403:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/engine.rb:309:in `to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+/* Spacing - base */
+/* Spacing - elements, which all derives from base */
+/* 960px */
+/* 960px */
+/* 6.5rem */
+/* 3px */
+/* Media queries - https://gist.github.com/bobbygrace/9e961e8982f42eb91b80 */
+@highdensity :  ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+               ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+               ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+               ~"only screen and (min-device-pixel-ratio: 1.5)";
+@small :        ~"only screen and (max-width: 750px)";
+@medium :       ~"only screen and (min-width: 751px) and (max-width: 900px)";
+@large :        ~"only screen and (min-width: 901px) and (max-width: 1280px)";
+@extra-large :  ~"only screen and (min-width: 1281px)";
+@print :        ~"print";
+/* Z-indices, border radix */
+/* 3px */
+/* Global typography variables */
+/* 10.8px */
+/* 12px */
+/* 14px */
+/* 16px */
+/* 19.2px */
+/* 24px */
+/* 32px */
+/* Global typography variables for h1, h2, h3, h4, h5, h6 */
+/* Colors - base */
+/* navy */
+/* gold */
+/* midnight */
+/* denim */
+/* blue */
+/* Colors - elements, which all derives from base */
+/* Global utilities */
+/* Global sitenav link styles */
+/* Chapter header styles */
+/* Angled edges background CSS, credit https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms */
+/* CSS Reset
+  http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"_collage\": expected \"{\", was \"\"\A         on line 1 of scss/components/_collage.scss\A         from line 12 of scss/theme.scss\A \A 1: _collage"; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 16px;
+  /* Define base REM as 16px */ }
+
+body {
+  background: #FFF;
+  font-size: 100%;
+  font-style: normal;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #5e5e5e;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  min-height: 100%; }
+
+a, a:visited {
+  text-decoration: none;
+  color: #3887be; }
+  a:hover, a:focus, a:active, a:visited:hover, a:visited:focus, a:visited:active {
+    color: #5a9fcf; }
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative; }
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
+#header {
+  /* Apply this at the parent div of .container */
+  margin: 2rem auto; }
+  @media (max-width: 960px) {
+    #header {
+      width: 90%; } }
+
+.sitenav {
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative;
+  height: 48px;
+  font-size: 0.875rem;
+  border-bottom: 1px solid rgba(49, 78, 95, 0.075); }
+  .sitenav h1 {
+    width: 70px;
+    height: 27px;
+    /*overflow: hidden;*/
+    text-indent: 100%;
+    margin: 0 0 0 -1px;
+    position: absolute;
+    z-index: 10;
+    top: 10px; }
+    .sitenav h1 a {
+      display: block;
+      position: absolute;
+      left: -70px;
+      padding: 6px 1rem;
+      /* STRIPE LOGO MODE
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-image: url(https://stripe.com/img/navigation/logo.png?2);
+      background-repeat: no-repeat;
+      */ }
+  .sitenav__content {
+    left: auto;
+    width: auto;
+    height: auto;
+    position: relative; }
+  .sitenav__pages {
+    margin-left: 80px;
+    padding: 16px 0 0; }
+    .sitenav__pages__item {
+      display: inline;
+      list-style-type: none;
+      padding: 10px 8px;
+      color: #666;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out; }
+  .sitenav__actions {
+    position: absolute;
+    right: 0;
+    padding: 16px 0 0;
+    top: 0; }
+    .sitenav__actions__item {
+      display: inline;
+      list-style-type: none;
+      padding: 10px 8px;
+      color: #666;
+      text-decoration: none;
+      font-weight: 500; }
+    .sitenav__actions__button {
+      display: inline;
+      list-style-type: none;
+      padding: 10px 8px;
+      color: #666;
+      text-decoration: none;
+      font-weight: 500; }
+
+.collage__figure {
+  padding: 0.1875rem; }
+
+.collage__figure__img {
+  border-radius: 0.1875rem; }
+
+.bigtext {
+  color: white;
+  margin: 0 auto; }
+
+.bigtext--homehero {
+  font-size: 48px;
+  font-size: 4.25rem;
+  font-weight: 900;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 50rem;
+  padding: 20vh 0; }
+
+.bigtext--tagline {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.05;
+  max-width: 80%;
+  padding: 6.5rem 0 2.16667rem; }
+
+.container {
+  position: relative;
+  width: 83.3333%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container--homehero {
+  height: 100%; }
+
+.navblock {
+  margin: -2rem auto;
+  max-width: 960px;
+  z-index: 2;
+  border-radius: 0.1875rem;
+  background-color: #f8f8f8; }
+
+.navblock--homehero {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.navblock__list {
+  display: table;
+  width: 100%; }
+
+.navblock__listitem {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+  .navblock__listitem:hover {
+    background-color: #ebebeb;
+    border-radius: 0.1875rem; }
+
+.navblock__listitem__link {
+  display: block;
+  padding: 1.5rem 0; }
+
+.navblock__listitem__title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: none;
+  margin: 0 0 0.5rem; }
+
+.navblock__listitem__meta {
+  font-size: 0.75rem;
+  text-transform: uppercase; }
+
+.shortlist--tagline {
+  color: white;
+  max-width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.shortlist__item {
+  display: inline; }
+
+.page--home #header {
+  display: none; }
+
+.home__intro {
+  height: 100vh;
+  background-color: red;
+  background-image: url(http://i.imgur.com/jzWoK90.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0; }
+
+.home__tagline {
+  margin-bottom: 3rem; }
+
+.home__projects {
+  background: linear-gradient(#495d77, #364457); }
+
+.home__workflow__content {
+  margin: 20vh auto;
+  max-width: 960px;
+  position: relative; }
+  .home__workflow__content__row {
+    display: flex;
+    width: 100%;
+    margin: 2rem 0; }
+  .home__workflow__content h2 {
+    line-height: 1.3;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    max-width: 50rem;
+    margin: 0 auto; }
+
+.header__border {
+  padding-bottom: 5px;
+  background-position: 0 85%;
+  background-size: 100% 1rem;
+  background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient(#f9e1e7 0%, #f9e1e7 100%);
+  background-image: -o-linear-gradient(#f9e1e7 0%, #f9e1e7 100%);
+  background-image: linear-gradient(#f9e1e7 0%, #f9e1e7 100%); }
+
+/*# sourceMappingURL=theme.css.map */

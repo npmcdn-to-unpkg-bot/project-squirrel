@@ -13,36 +13,24 @@
   <section class="collage collage--home">
 
     <div class="collage__row">
-      <figure class="collage__img collage__img--hero">
-        <img class="collage__img__img" src="{{ page.media['project-hero.jpg'].url }}">
+      <figure class="collage__figure collage__figure--hero" style="background-image: url('{{ page.media['project-hero.jpg'].url }}')">
       </figure>
     </div><!-- .collage__row -->
 
-    <div class="home__projects__content__row">
+    <div class="collage__row">
 
-      <div class="flexgrid">
-        <div class="flexcell">
-          <figure class="collage__img collage__img--vertical">
-            <img src="{{ page.media['project-vertical.jpg'].url }}">
-          </figure>
-        </div><!-- .flexcell -->
-        <div class="flexcell">
-          <div class="flexgrid flexgrid--nested">
-            <div class="flexcell">
-              <figure class="collage__img collage__img--horizontal">
-                <img src="{{ page.media['project-horizontal.jpg'].url }}">
-              </figure>
-            </div>
-            <div class="flexcell">
-              <figure class="collage__img collage__img--bottom">
-                <img src="{{ page.media['project-bottom.jpg'].url }}">
-              </figure>
-            </div>
-          </div><!-- .flexgrid .nested -->
-        </div><!-- .flexcell -->
-      </div><!-- .flexgrid -->
+      <div class="collage__half">
+        <figure class="collage__figure collage__figure--vertical" style="background-image: url('{{ page.media['project-vertical.jpg'].url }}')">
+        </figure>
+      </div>
+      <div class="collage__half">
+        <figure class="collage__figure collage__figure--horizontal" style="background-image: url('{{ page.media['project-horizontal.jpg'].url }}')">
+        </figure>
+        <figure class="collage__figure collage__figure--bottom" style="background-image: url('{{ page.media['project-bottom.jpg'].url }}')">
+        </figure>
+      </div>
 
-    </div><!-- .home__projects__content__row -->
+    </div><!-- .collage__row -->
 
   </section>
 </div>
