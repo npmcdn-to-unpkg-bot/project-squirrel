@@ -3,7 +3,7 @@
 /* 960px */
 /* 960px */
 /* 6.5rem */
-/* 3px */
+/* 8px */
 /* Media queries - https://gist.github.com/bobbygrace/9e961e8982f42eb91b80 */
 @highdensity :  ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
                ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
@@ -193,8 +193,30 @@ a, a:visited {
       text-decoration: none;
       font-weight: 500; }
 
+.collage__row {
+  display: block;
+  margin-bottom: 0.5rem; }
+
+.collage__half {
+  width: calc(50% - 4px);
+  float: left;
+  height: 650px; }
+  .collage__half:first-child {
+    margin-right: 0.5rem; }
+
 .collage__figure {
-  padding: 0.1875rem; }
+  min-height: 300px;
+  border-radius: 0.1875rem;
+  background-size: cover;
+  background-position: center; }
+
+.collage__figure--tall {
+  height: 100%; }
+
+.collage__figure--short {
+  height: calc(50% - 4px); }
+  .collage__figure--short:first-child {
+    margin-bottom: 0.5rem; }
 
 .collage__figure__img {
   border-radius: 0.1875rem; }

@@ -5,16 +5,34 @@
 
 }
 .collage__row {
-
+  display: block;
+  margin-bottom: $collage-gutter;
 }
 .collage__half {
-
+  width: calc(50% - 4px);
+  float: left;
+  height: 650px;
+  &:first-child {
+    margin-right: $collage-gutter;
+  }
 }
 .collage__figure {
-  padding: $collage-gutter;
+  min-height: 300px;
+  border-radius: $border-radius-normal;
+  background-size: cover;
+  background-position: center;
 }
 .collage__figure--hero {
 
+}
+.collage__figure--tall {
+  height: 100%;
+}
+.collage__figure--short {
+  height: calc(50% - 4px);
+  &:first-child {
+    margin-bottom: $collage-gutter;
+  }
 }
 .collage__figure__img {
   border-radius: $border-radius-normal;
