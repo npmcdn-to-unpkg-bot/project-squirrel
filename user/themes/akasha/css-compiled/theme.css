@@ -123,7 +123,9 @@ a, a:visited {
 .lighten-bg {
   box-shadow: inset 0 0 1000px 1000px rgba(255, 255, 255, 0.5); }
 
-/* Should only include font related properties here. No opinionated positioning. 
+/* When using, must apply `.bigtext` base first, then apply a modifier after it.
+Should only include font related properties here. No opinionated positioning. 
+
 Allowed properties:
 font-size
 font-height
@@ -137,14 +139,13 @@ text-align
 Note: modifiers can add opinionated stylings, but not base.
 */
 .bigtext {
-  color: white;
-  margin: 0 auto;
   font-weight: 700;
-  font-size: 2rem;
   line-height: 1.05;
   font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .bigtext--homehero {
+  color: white;
+  margin: 0 auto;
   font-size: 48px;
   font-size: 4.25rem;
   font-weight: 900;
@@ -156,24 +157,27 @@ Note: modifiers can add opinionated stylings, but not base.
   padding: 20vh 0; }
 
 .bigtext--tagline {
+  color: white;
   text-align: center;
   max-width: 80%;
+  margin: 0 auto;
+  font-size: 2rem;
   padding: 0 0 2.5rem; }
 
 .bigtext--workflow {
   color: #5e5e5e;
   line-height: 1.2;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  font-size: 2rem; }
 
 .bigtext--block {
   display: block;
   font-size: 1.5rem;
-  font-weight: 700;
-  font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 0 0.5rem; }
 
-.smalltext--block {
+.smalltext {
   font-size: 0.75rem;
+  line-height: 1.5;
   text-transform: uppercase; }
 
 .prose {
@@ -196,7 +200,7 @@ Note: modifiers can add opinionated stylings, but not base.
   margin: 0 auto; }
 
 .pricing-card__header {
-  background: #f9886c;
+  background: #fff;
   text-align: center;
   padding: 1.5rem 0; }
 
