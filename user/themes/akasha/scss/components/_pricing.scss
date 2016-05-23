@@ -1,0 +1,31 @@
+.pricing-cards {
+
+}
+.pricing-cards--home {
+  margin: $spacing-large 0;
+}
+.pricing-card {
+  float: left;
+  width: 25%;
+  overflow: hidden;
+  border-radius: $border-radius-normal;
+}
+.pricing-card__header,
+.pricing-card__content {
+  border-radius: $border-radius-normal;
+  position: relative;
+  max-width: 230px;
+  margin: 0 auto; 
+}
+.pricing-card__header {
+  background: $orange;
+}
+.pricing-card__header__title {
+  
+}
+.pricing-card__header__tagline {
+  
+}
+.pricing-card__content {
+  
+}

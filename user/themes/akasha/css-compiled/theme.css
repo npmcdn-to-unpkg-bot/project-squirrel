@@ -126,6 +126,25 @@ a, a:visited {
 .prose {
   line-height: 1.5; }
 
+.pricing-cards--home {
+  margin: 2rem 0; }
+
+.pricing-card {
+  float: left;
+  width: 25%;
+  overflow: hidden;
+  border-radius: 0.1875rem; }
+
+.pricing-card__header,
+.pricing-card__content {
+  border-radius: 0.1875rem;
+  position: relative;
+  max-width: 230px;
+  margin: 0 auto; }
+
+.pricing-card__header {
+  background: #f9886c; }
+
 .button {
   text-align: center;
   display: inline-block;
