@@ -30,11 +30,14 @@
   
 }
 .pricing-card__content {
+  text-align: center;
   border-bottom-left-radius: $border-radius-normal;
   border-bottom-right-radius: $border-radius-normal;
 }
 .pricing-card__content__perks {
-  text-align: center;
   line-height: $font-line-height-large;
-  padding: 0 $spacing-medium $spacing-medium;
+  padding: 0 $spacing-medium;
+}
+.pricing-card__content__action {
+  padding: $spacing-small 0 $spacing-medium;
 }
