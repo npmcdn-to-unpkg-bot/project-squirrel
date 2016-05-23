@@ -46,9 +46,13 @@ Note: modifiers can add opinionated stylings, but not base.
   padding-bottom: $spacing-large;
   font-size: $font-size-xxlarge;
 }
-.bigtext--block {
+.bigtext--pricing {
   display: block;
   font-size: $font-size-xxlarge;
+}
+.bigtext--navblock {
+  display: block;
+  font-size: $font-size-xlarge;
   margin: 0 0 $spacing-xsmall;
 }
 .smalltext {
