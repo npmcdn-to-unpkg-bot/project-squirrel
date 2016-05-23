@@ -1,3 +1,17 @@
+/* Should only include font related properties here. No opinionated positioning. 
+Allowed properties:
+font-size
+font-height
+font-family
+font-weight
+letter-spacing
+line-height
+text-transform
+text-align
+
+Note: modifiers can add opinionated stylings, but not base.
+*/
+
 .bigtext {
   color: white;
   margin: 0 auto;
@@ -38,5 +52,6 @@
 
 }
 .smalltext--block {
-  
+  font-size: $font-size-xsmall;
+  text-transform: uppercase;
 }
