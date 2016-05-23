@@ -1,13 +1,27 @@
 <div class="home__workflow lighten-bg">
   <section class="container">
-  <div class="subcontainer subcontainer--left">
-    <h2 class="bigtext bigtext--workflow">
-      {{ page.header.header }}</br>{{ page.header.subheader }}
-    </h2>
+    <div class="subcontainer subcontainer--left">
+      <h2 class="bigtext bigtext--workflow">
+        {{ page.header.header }}</br>{{ page.header.subheader }}
+      </h2>
 
-    <div class="prose prose--location">
-      <p>{{ page.header.location }}</p>
-    </div><!-- .home__projects__content__row -->
-  </div>
+      <div class="prose prose--location">
+        <p>{{ page.header.location }}</p>
+      </div><!-- .home__projects__content__row -->
+    </div>
+
+    <div class="pricing-cards">
+      {% for t in 1..4 %}
+      <div class="pricing-card">
+        <header class="pricing-card__header">
+          <h3 class="pricing-card__header__text">Lifestyle</h3>
+          <p class="pricing-card__header__tagline">Lifestyle</p>
+        </header>
+        <div class="pricing-card__content">
+        </div>
+      </div>
+      {% endfor %}
+      
+    </div>
   </section>
 </div>
