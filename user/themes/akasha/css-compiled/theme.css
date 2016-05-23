@@ -196,7 +196,7 @@ Note: modifiers can add opinionated stylings, but not base.
 .pricing-card__content {
   background: #fff;
   position: relative;
-  max-width: 230px;
+  max-width: 96%;
   margin: 0 auto; }
 
 .pricing-card__header {
@@ -204,6 +204,9 @@ Note: modifiers can add opinionated stylings, but not base.
   padding: 1.5rem 0;
   border-top-left-radius: 0.1875rem;
   border-top-right-radius: 0.1875rem; }
+
+.pricing-card__header__title {
+  padding-bottom: 0.5rem; }
 
 .pricing-card__content {
   border-bottom-left-radius: 0.1875rem;

@@ -14,8 +14,8 @@
 .pricing-card__content {
   background: $light-most;
   position: relative;
-  max-width: 230px;
-  margin: 0 auto; 
+  max-width: 96%;
+  margin: 0 auto;
 }
 .pricing-card__header {
   text-align: center;
@@ -24,7 +24,7 @@
   border-top-right-radius: $border-radius-normal;
 }
 .pricing-card__header__title {
-  
+  padding-bottom: $spacing-xsmall;
 }
 .pricing-card__header__tagline {
   
