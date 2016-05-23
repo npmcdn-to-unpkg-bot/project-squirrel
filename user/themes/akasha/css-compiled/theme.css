@@ -432,7 +432,6 @@ Note: modifiers can add opinionated stylings, but not base.
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 6.5rem 0 3.25rem;
-  min-height: 800px; }
+  padding: 6.5rem 0 3.25rem; }
 
 /*# sourceMappingURL=theme.css.map */
