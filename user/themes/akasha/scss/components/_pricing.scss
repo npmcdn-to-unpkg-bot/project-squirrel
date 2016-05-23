@@ -12,15 +12,16 @@
 }
 .pricing-card__header,
 .pricing-card__content {
-  border-radius: $border-radius-normal;
+  background: $light-most;
   position: relative;
   max-width: 230px;
   margin: 0 auto; 
 }
 .pricing-card__header {
-  background: $light-most;
   text-align: center;
   padding: $spacing-medium 0;
+  border-top-left-radius: $border-radius-normal;
+  border-top-right-radius: $border-radius-normal;
 }
 .pricing-card__header__title {
   
@@ -29,5 +30,11 @@
   
 }
 .pricing-card__content {
-  
+  border-bottom-left-radius: $border-radius-normal;
+  border-bottom-right-radius: $border-radius-normal;
+}
+.pricing-card__content__perks {
+  text-align: center;
+  line-height: $font-line-height-large;
+  padding: 0 $spacing-medium $spacing-medium;
 }
