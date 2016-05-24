@@ -389,6 +389,15 @@ Note: modifiers can add opinionated stylings, but not base.
   display: block;
   padding: 1.5rem 0; }
 
+.scroller__item {
+  margin-bottom: 0.5rem; }
+
+.scroller__item__figure {
+  min-height: 25vw;
+  border-radius: 0.1875rem;
+  background-size: cover;
+  background-position: center; }
+
 .shortlist--tagline {
   color: white;
   max-width: 80%;
@@ -463,7 +472,6 @@ Note: modifiers can add opinionated stylings, but not base.
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 6.5rem 0 3.25rem;
-  min-height: 100vh; }
+  padding: 6.5rem 0 3.25rem; }
 
 /*# sourceMappingURL=theme.css.map */
