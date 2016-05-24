@@ -83,6 +83,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* Only HTML elements, no CSS classes allowed. All global helper classes go into _utils.scss */
 html {
   font-size: 16px;
   /* Define base REM as 16px */ }
@@ -104,10 +105,14 @@ a, a:visited {
   a:hover, a:focus, a:active, a:visited:hover, a:visited:focus, a:visited:active {
     color: #5a9fcf; }
 
-.container {
-  margin: 0 auto;
-  max-width: 960px;
-  position: relative; }
+/* One-off utility functions, etc */
+.darken-bg {
+  /*box-shadow: inset 0 0 1000px 1000px rgba(74, 94, 120, 0.7); /* denim */
+  box-shadow: inset 0 0 1000px 1000px rgba(21, 41, 56, 0.75);
+  /* midnight */ }
+
+.lighten-bg {
+  box-shadow: inset 0 0 1000px 1000px rgba(255, 255, 255, 0.5); }
 
 .clear:after {
   content: "";
@@ -119,9 +124,6 @@ a, a:visited {
   display: table; }
 .clearfix:after {
   clear: both; }
-
-.lighten-bg {
-  box-shadow: inset 0 0 1000px 1000px rgba(255, 255, 255, 0.5); }
 
 /* When using, must apply `.bigtext` base first, then apply a modifier after it.
 Should only include font related properties here. No opinionated positioning. 
@@ -170,6 +172,12 @@ Note: modifiers can add opinionated stylings, but not base.
   padding-bottom: 2rem;
   font-size: 2rem; }
 
+.bigtext--cosplay {
+  color: #fff;
+  line-height: 1.2;
+  padding-bottom: 2rem;
+  font-size: 2rem; }
+
 .bigtext--pricing {
   display: block;
   font-size: 2rem; }
@@ -187,8 +195,14 @@ Note: modifiers can add opinionated stylings, but not base.
 .prose {
   line-height: 1.5; }
 
+.prose--location {
+  margin-bottom: 4rem; }
+
+.prose--cosplay {
+  color: #fff; }
+
 .pricing-cards--home {
-  margin: 2rem 0; }
+  margin: 0 0 2rem; }
 
 .pricing-card {
   float: left;
@@ -395,11 +409,16 @@ Note: modifiers can add opinionated stylings, but not base.
 .container--homehero {
   height: 100%; }
 
-/* Subcontainer must be used inside container */
-.subcontainer--left {
-  margin-right: 50%;
+/* Subcontainer must be used inside a regular container */
+.subcontainer {
   width: 50%;
   max-width: 576px; }
+
+.subcontainer--left {
+  margin-right: 50%; }
+
+.subcontainer--right {
+  margin-left: 50%; }
 
 .page--home #header {
   display: none; }
@@ -437,5 +456,14 @@ Note: modifiers can add opinionated stylings, but not base.
   background-size: cover;
   position: relative;
   padding: 6.5rem 0 3.25rem; }
+
+.home__cosplay {
+  background-color: #cad2d3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 6.5rem 0 3.25rem;
+  min-height: 100vh; }
 
 /*# sourceMappingURL=theme.css.map */

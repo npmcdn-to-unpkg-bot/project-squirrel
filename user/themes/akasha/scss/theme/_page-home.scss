@@ -37,3 +37,12 @@
   position: relative;
   padding: $content-block-padding 0 ($content-block-padding / 2);
 }
+.home__cosplay {
+  background-color: rgb(202, 210, 211);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: $content-block-padding 0 ($content-block-padding / 2);
+  min-height: 100vh;
+}

@@ -46,6 +46,12 @@ Note: modifiers can add opinionated stylings, but not base.
   padding-bottom: $spacing-large;
   font-size: $font-size-xxlarge;
 }
+.bigtext--cosplay {
+  color: $light-most;
+  line-height: $font-line-height;
+  padding-bottom: $spacing-large;
+  font-size: $font-size-xxlarge;
+}
 .bigtext--pricing {
   display: block;
   font-size: $font-size-xxlarge;
