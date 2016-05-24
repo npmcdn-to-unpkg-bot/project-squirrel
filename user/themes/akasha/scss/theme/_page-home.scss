@@ -38,6 +38,10 @@
   padding: $content-block-padding 0 ($content-block-padding / 2);
 }
 .home__cosplay {
+  transition: background 2s ease;
+  &:hover {
+    background-image: url(https://cloud.githubusercontent.com/assets/1095291/15449812/3ff72e06-1f3d-11e6-81d2-48d68fad25ad.png);
+  }
   background-color: rgb(202, 210, 211);
   background-position: center;
   background-repeat: no-repeat;

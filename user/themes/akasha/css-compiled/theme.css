@@ -199,7 +199,8 @@ Note: modifiers can add opinionated stylings, but not base.
   margin-bottom: 4rem; }
 
 .prose--cosplay {
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 4rem; }
 
 .pricing-cards--home {
   margin: 0 0 2rem; }
@@ -467,11 +468,14 @@ Note: modifiers can add opinionated stylings, but not base.
   padding: 6.5rem 0 3.25rem; }
 
 .home__cosplay {
+  transition: background 2s ease;
   background-color: #cad2d3;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   padding: 6.5rem 0 3.25rem; }
+  .home__cosplay:hover {
+    background-image: url(https://cloud.githubusercontent.com/assets/1095291/15449812/3ff72e06-1f3d-11e6-81d2-48d68fad25ad.png); }
 
 /*# sourceMappingURL=theme.css.map */
