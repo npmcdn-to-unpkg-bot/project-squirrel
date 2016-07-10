@@ -16,6 +16,8 @@ Note: modifiers can add opinionated stylings, but not base.
 
 .bigtext {
   color: $dark-medium;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   font-weight: $font-weight-bold;
   line-height: $font-line-height-small;
   font-family: $strong-font-family;
@@ -25,8 +27,6 @@ Note: modifiers can add opinionated stylings, but not base.
   font-size: $font-size-xxlarge;
   font-weight: $font-weight-bold;
   line-height: $font-line-height-small;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   padding: $spacing-xxlarge 0;
 }
 .bigtext--tagline {

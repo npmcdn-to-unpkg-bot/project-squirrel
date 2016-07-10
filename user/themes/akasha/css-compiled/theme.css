@@ -37,23 +37,23 @@
 /* Angled edges background CSS, credit https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms */
 @font-face {
   font-family: 'brandon text';
-  src: url("../../fonts/brandon-text-regular.eot");
+  src: url("../fonts/brandon-text-regular.eot");
   /* IE9 Compat Modes */
-  src: url("../../fonts/brandon-text-regular.woff") format("woff"), url("../../fonts/brandon-text-regular.ttf") format("truetype"), url("../../fonts/brandon-text-regular.svg#brandon_text_regularregular") format("svg");
+  src: url("../fonts/brandon-text-regular.woff") format("woff"), url("../fonts/brandon-text-regular.ttf") format("truetype"), url("../fonts/brandon-text-regular.svg#brandon_text_regularregular") format("svg");
   /* Legacy iOS */
   font-weight: 400; }
 @font-face {
   font-family: 'brandon text';
-  src: url("../../fonts/brandon-text-medium.eot");
+  src: url("../fonts/brandon-text-medium.eot");
   /* IE9 Compat Modes */
-  src: url("../../fonts/brandon-text-medium.woff") format("woff"), url("../../fonts/brandon-text-medium.ttf") format("truetype"), url("../../fonts/brandon-text-medium.svg#brandon_textmedium") format("svg");
+  src: url("../fonts/brandon-text-medium.woff") format("woff"), url("../fonts/brandon-text-medium.ttf") format("truetype"), url("../fonts/brandon-text-medium.svg#brandon_textmedium") format("svg");
   /* Legacy iOS */
   font-weight: 500; }
 @font-face {
   font-family: 'brandon text';
-  src: url("../../fonts/brandon-text-bold.eot");
+  src: url("../fonts/brandon-text-bold.eot");
   /* IE9 Compat Modes */
-  src: url("../../fonts/brandon-text-bold.woff") format("woff"), url("../../fonts/brandon-text-bold.ttf") format("truetype"), url("../../fonts/brandon-text-bold.svg#brandon_textbold") format("svg");
+  src: url("../fonts/brandon-text-bold.woff") format("woff"), url("../fonts/brandon-text-bold.ttf") format("truetype"), url("../fonts/brandon-text-bold.svg#brandon_textbold") format("svg");
   /* Legacy iOS */
   font-weight: 700; }
 /* CSS Reset
@@ -163,6 +163,8 @@ Note: modifiers can add opinionated stylings, but not base.
 */
 .bigtext {
   color: #5e5e5e;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   font-weight: 700;
   line-height: 1.05;
   font-family: "brandon text", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
@@ -172,8 +174,6 @@ Note: modifiers can add opinionated stylings, but not base.
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.05;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   padding: 3rem 0; }
 
 .bigtext--tagline {
@@ -466,10 +466,14 @@ Note: modifiers can add opinionated stylings, but not base.
 
 .home__projects {
   background: #f8f8f8;
+  background-image: url(../images/bg_photography.png);
   padding: 6.5rem 0 3.25rem;
   position: relative;
   z-index: -1; }
 
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+  .home__projects {
+    background-image: url(../images/bg_photography.png); } }
 .home__projects__curtain {
   background: navy;
   position: absolute;
