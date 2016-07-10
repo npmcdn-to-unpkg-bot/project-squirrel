@@ -1,3 +1,4 @@
 ---
-herotext: Tenori Taiga
+brandname: Tenori Taiga 
+brandproperty: Photography
 ---

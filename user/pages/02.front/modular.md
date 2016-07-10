@@ -18,6 +18,6 @@ content:
     custom:
       - _intro
       - _projects
-      - _workflow
       - _cosplay
+      - _workflow
 ---

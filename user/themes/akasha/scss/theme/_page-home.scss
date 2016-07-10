@@ -7,7 +7,7 @@ $block-padding: $content-block-padding 0 ($content-block-padding / 2);
 }
 .home__intro {
   height: 100vh;
-  background-color: red;
+  background-color: pink;
   background-image: url(http://i.imgur.com/jzWoK90.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@ $block-padding: $content-block-padding 0 ($content-block-padding / 2);
   margin-bottom: $spacing-xxlarge;
 }
 .home__projects {
-  background: $home-projects-bg;
+  background: $home-nav-bg;
   padding: $block-padding;
   position: relative;
   z-index: $z-index-bg;

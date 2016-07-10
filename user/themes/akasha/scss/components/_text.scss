@@ -15,25 +15,21 @@ Note: modifiers can add opinionated stylings, but not base.
 */
 
 .bigtext {
+  color: $dark-medium;
   font-weight: $font-weight-bold;
   line-height: $font-line-height-small;
   font-family: $strong-font-family;
 }
 .bigtext--homehero {
-  color: white;
-  margin: 0 auto;
-  font-size: 48px;
-  font-size: 4.25rem;
-  font-weight: $font-weight-bolder;
-  line-height: 1.1;
-  letter-spacing: 5px;
+  color: $light-most;
+  font-size: $font-size-xxlarge;
+  font-weight: $font-weight-bold;
+  line-height: $font-line-height-small;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  text-align: center;
-  max-width: 50rem;
-  padding: 20vh 0;
+  padding: $spacing-xxlarge 0;
 }
 .bigtext--tagline {
-  color: white;
   text-align: center;
   max-width: 80%;
   margin: 0 auto;
@@ -41,7 +37,6 @@ Note: modifiers can add opinionated stylings, but not base.
   padding: 0 0 $spacing-xlarge;
 }
 .bigtext--workflow {
-  color: $dark-medium;
   line-height: $font-line-height;
   padding-bottom: $spacing-large;
   font-size: $font-size-xxlarge;

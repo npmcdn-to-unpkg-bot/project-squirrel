@@ -35,6 +35,27 @@
 /* Global sitenav link styles */
 /* Chapter header styles */
 /* Angled edges background CSS, credit https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms */
+@font-face {
+  font-family: 'brandon text';
+  src: url("../../fonts/brandon-text-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/brandon-text-regular.woff") format("woff"), url("../../fonts/brandon-text-regular.ttf") format("truetype"), url("../../fonts/brandon-text-regular.svg#brandon_text_regularregular") format("svg");
+  /* Legacy iOS */
+  font-weight: 400; }
+@font-face {
+  font-family: 'brandon text';
+  src: url("../../fonts/brandon-text-medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/brandon-text-medium.woff") format("woff"), url("../../fonts/brandon-text-medium.ttf") format("truetype"), url("../../fonts/brandon-text-medium.svg#brandon_textmedium") format("svg");
+  /* Legacy iOS */
+  font-weight: 500; }
+@font-face {
+  font-family: 'brandon text';
+  src: url("../../fonts/brandon-text-bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/brandon-text-bold.woff") format("woff"), url("../../fonts/brandon-text-bold.ttf") format("truetype"), url("../../fonts/brandon-text-bold.svg#brandon_textbold") format("svg");
+  /* Legacy iOS */
+  font-weight: 700; }
 /* CSS Reset
   http://meyerweb.com/eric/tools/css/reset/ 
   v2.0 | 20110126
@@ -92,7 +113,7 @@ body {
   background: #FFF;
   font-size: 100%;
   font-style: normal;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "brandon text", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: 400;
   color: #5e5e5e;
   -webkit-font-smoothing: antialiased;
@@ -141,25 +162,21 @@ text-align
 Note: modifiers can add opinionated stylings, but not base.
 */
 .bigtext {
+  color: #5e5e5e;
   font-weight: 700;
   line-height: 1.05;
-  font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "brandon text", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
 
 .bigtext--homehero {
-  color: white;
-  margin: 0 auto;
-  font-size: 48px;
-  font-size: 4.25rem;
-  font-weight: 900;
-  line-height: 1.1;
-  letter-spacing: 5px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  text-align: center;
-  max-width: 50rem;
-  padding: 20vh 0; }
+  padding: 3rem 0; }
 
 .bigtext--tagline {
-  color: white;
   text-align: center;
   max-width: 80%;
   margin: 0 auto;
@@ -167,7 +184,6 @@ Note: modifiers can add opinionated stylings, but not base.
   padding: 0 0 2.5rem; }
 
 .bigtext--workflow {
-  color: #5e5e5e;
   line-height: 1.2;
   padding-bottom: 2rem;
   font-size: 2rem; }
@@ -364,6 +380,7 @@ Note: modifiers can add opinionated stylings, but not base.
   border-radius: 0.1875rem; }
 
 .navblock {
+  display: none;
   margin: -2rem auto;
   max-width: 960px;
   z-index: 2;
@@ -401,8 +418,8 @@ Note: modifiers can add opinionated stylings, but not base.
   background-position: center; }
 
 .shortlist--tagline {
-  color: white;
   max-width: 80%;
+  line-height: 1.5;
   text-align: center;
   margin-left: auto;
   margin-right: auto; }
@@ -436,7 +453,7 @@ Note: modifiers can add opinionated stylings, but not base.
 
 .home__intro {
   height: 100vh;
-  background-color: red;
+  background-color: pink;
   background-image: url(http://i.imgur.com/jzWoK90.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -448,7 +465,7 @@ Note: modifiers can add opinionated stylings, but not base.
   margin-bottom: 3rem; }
 
 .home__projects {
-  background: linear-gradient(#495d77, #364457);
+  background: #f8f8f8;
   padding: 6.5rem 0 3.25rem;
   position: relative;
   z-index: -1; }
