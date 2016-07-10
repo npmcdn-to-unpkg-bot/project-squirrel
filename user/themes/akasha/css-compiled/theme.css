@@ -471,9 +471,14 @@ Note: modifiers can add opinionated stylings, but not base.
   position: relative;
   z-index: -1; }
 
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+/*@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
   .home__projects {
-    background-image: url(../images/bg_photography.png); } }
+  background-image: url(../images/bg_photography.png);
+  }
+}*/
 .home__projects__curtain {
   background: navy;
   position: absolute;
