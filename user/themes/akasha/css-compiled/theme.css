@@ -181,7 +181,7 @@ Note: modifiers can add opinionated stylings, but not base.
   max-width: 80%;
   margin: 0 auto;
   font-size: 2rem;
-  padding: 0 0 2.5rem; }
+  padding: 0 0 1.5rem; }
 
 .bigtext--workflow {
   line-height: 1.2;
@@ -462,7 +462,7 @@ Note: modifiers can add opinionated stylings, but not base.
   z-index: 0; }
 
 .home__tagline {
-  margin-bottom: 3rem; }
+  margin-bottom: 3.25rem; }
 
 .home__projects {
   background: #f8f8f8;

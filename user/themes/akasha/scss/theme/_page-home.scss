@@ -16,7 +16,7 @@ $block-padding: $content-block-padding 0 ($content-block-padding / 2);
   z-index: $z-index-herobg;
 }
 .home__tagline {
-  margin-bottom: $spacing-xxlarge;
+  margin-bottom: ($content-block-padding / 2);
 }
 .home__projects {
   background: $home-nav-bg;
