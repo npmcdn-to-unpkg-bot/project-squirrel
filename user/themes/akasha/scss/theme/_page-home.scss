@@ -1,3 +1,5 @@
+$block-padding: $content-block-padding 0 ($content-block-padding / 2);
+
 .page--home {
   #header {
     display: none;
@@ -18,7 +20,7 @@
 }
 .home__projects {
   background: $home-projects-bg;
-  padding: $content-block-padding 0 ($content-block-padding / 2);
+  padding: $block-padding;
   position: relative;
   z-index: $z-index-bg;
 }
@@ -30,22 +32,32 @@
 }
 .home__workflow {
   background-color: rgb(202, 210, 211);
-  background-image: url(https://cloud.githubusercontent.com/assets/1095291/15449812/3ff72e06-1f3d-11e6-81d2-48d68fad25ad.png);
+  background-image: url(https://cloud.githubusercontent.com/assets/1095291/15520208/014b8ec0-21ba-11e6-94d7-691dcb0407ab.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: $content-block-padding 0 ($content-block-padding / 2);
+  padding: $block-padding;
+}
+.home__workflow {
+  background-color: rgb(202, 210, 211);
+  background-image: url(https://cloud.githubusercontent.com/assets/1095291/15520208/014b8ec0-21ba-11e6-94d7-691dcb0407ab.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: $block-padding;
+}
+.home__testimonial {
+  position: relative;
+  padding: $block-padding;
 }
 .home__cosplay {
   transition: background 2s ease;
-  &:hover {
-    background-image: url(https://cloud.githubusercontent.com/assets/1095291/15449812/3ff72e06-1f3d-11e6-81d2-48d68fad25ad.png);
-  }
   background-color: rgb(202, 210, 211);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: $content-block-padding 0 ($content-block-padding / 2);
+  padding: $block-padding;
 }

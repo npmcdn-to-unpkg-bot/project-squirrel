@@ -213,7 +213,8 @@ Note: modifiers can add opinionated stylings, but not base.
 
 .pricing-card__header,
 .pricing-card__content {
-  background: #fff;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
   position: relative;
   max-width: 96%;
   margin: 0 auto; }
@@ -460,10 +461,23 @@ Note: modifiers can add opinionated stylings, but not base.
 
 .home__workflow {
   background-color: #cad2d3;
-  background-image: url(https://cloud.githubusercontent.com/assets/1095291/15449812/3ff72e06-1f3d-11e6-81d2-48d68fad25ad.png);
+  background-image: url(https://cloud.githubusercontent.com/assets/1095291/15520208/014b8ec0-21ba-11e6-94d7-691dcb0407ab.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  padding: 6.5rem 0 3.25rem; }
+
+.home__workflow {
+  background-color: #cad2d3;
+  background-image: url(https://cloud.githubusercontent.com/assets/1095291/15520208/014b8ec0-21ba-11e6-94d7-691dcb0407ab.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 6.5rem 0 3.25rem; }
+
+.home__testimonial {
   position: relative;
   padding: 6.5rem 0 3.25rem; }
 
@@ -475,7 +489,5 @@ Note: modifiers can add opinionated stylings, but not base.
   background-size: cover;
   position: relative;
   padding: 6.5rem 0 3.25rem; }
-  .home__cosplay:hover {
-    background-image: url(https://cloud.githubusercontent.com/assets/1095291/15449812/3ff72e06-1f3d-11e6-81d2-48d68fad25ad.png); }
 
 /*# sourceMappingURL=theme.css.map */

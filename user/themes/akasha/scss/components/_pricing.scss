@@ -12,7 +12,8 @@
 }
 .pricing-card__header,
 .pricing-card__content {
-  background: $light-most;
+  background-color: $light-most;
+  background-color: rgba(255,255,255,0.75);
   position: relative;
   max-width: 96%;
   margin: 0 auto;
