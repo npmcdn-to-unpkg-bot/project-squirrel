@@ -23,7 +23,10 @@ Note: modifiers can add opinionated stylings, but not base.
   font-family: $strong-font-family;
 }
 .bigtext--homehero {
-  color: $light-most;
+  text-align: center;
+  max-width: 80px;
+  margin: 0 auto;
+  color: $pink;
   font-size: $font-size-xxlarge;
   font-weight: $font-weight-bold;
   line-height: $font-line-height-small;

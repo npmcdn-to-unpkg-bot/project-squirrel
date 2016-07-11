@@ -1,4 +1,5 @@
 ---
-brandname: Tenori Taiga 
+brandname: Tenori 
+brandsurname: Taiga
 brandproperty: Photography
 ---

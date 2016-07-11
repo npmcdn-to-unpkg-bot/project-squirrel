@@ -6,13 +6,13 @@ $block-padding: $content-block-padding 0 ($content-block-padding / 2);
   }
 }
 .home__intro {
-  height: 100vh;
-  background-color: pink;
-  background-image: url(http://i.imgur.com/jzWoK90.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  /*height: 100vh;*/
+  /*background-color: pink;*/
+  /*background-image: url(http://i.imgur.com/jzWoK90.jpg);*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  /*position: relative;*/
   z-index: $z-index-herobg;
 }
 .home__tagline {
